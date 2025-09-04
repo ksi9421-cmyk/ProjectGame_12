@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\5th_12\\ProjectGame_12\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|D:\\5th_12\\ProjectGame_12\\ProjectGame_12\\ProjectGame_12.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\ProjectGame_12.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectGame_12.cpp",
+              "DocumentMoniker": "D:\\5th_12\\ProjectGame_12\\ProjectGame_12\\ProjectGame_12.cpp",
+              "RelativeDocumentMoniker": "ProjectGame_12\\ProjectGame_12.cpp",
+              "ToolTip": "D:\\5th_12\\ProjectGame_12\\ProjectGame_12\\ProjectGame_12.cpp",
+              "RelativeToolTip": "ProjectGame_12\\ProjectGame_12.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-04T11:20:29.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

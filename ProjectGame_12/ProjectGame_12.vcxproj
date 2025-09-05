@@ -126,7 +126,6 @@
     <ClCompile Include="Boss_RedDragon.cpp" />
     <ClCompile Include="Goblin.cpp" />
     <ClCompile Include="Lizardman.cpp" />
-    <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Slime.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>

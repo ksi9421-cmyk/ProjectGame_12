@@ -9,7 +9,7 @@ protected:
 	string name;
 	int HP;
 	int Power;
-	int Lev;
+	int Lev;   
 
 public:
 	Monster(string name);

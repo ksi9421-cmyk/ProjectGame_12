@@ -35,17 +35,23 @@ public:
 class Armor : public Item
 {
 public:
-	int defense;
+	int HPBoost;
+	float HPBoostRatio;
 	Armor();
-	~Armor();
-	Armor(std::string name, int price, std::string info, int defense);
+	Armor(std::string name, int price, std::string info, int HPBoostRatio);
+	~Armor() override;
 		void use(Player& target) override;
 };
 class Potion : public Item {
 public:
 	int healAmount;
+	float healRatio;
+	bool isPercent;
 	Potion();
-	~Potion();
 	Potion(std::string name, int price, std::string info, int healAmount);
+	Potion(std::string name, int price, std::string info, float healRatio);
+
+	~Potion() override;
+
 	void use(Player& target) override;
 };

@@ -3,17 +3,15 @@
 using namespace std;
 
 
-class Monster           //순수 가상함수로 기능할것
+class Monster          
 {
-protected:
-	string name;
-	int HP;
-	int Power;
-	int Lev;   
-
+	
 public:
-	Monster(string name);
+	virtual string getName() = 0;
+	virtual int getHealth() = 0;
+	virtual int getAttack() = 0;
+	virtual void takeDamage(int dagamge) = 0; 
 
-
+	virtual ~Monster() {}
 };
 

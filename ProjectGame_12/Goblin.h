@@ -13,6 +13,6 @@ public:
 	string getName();
 	int getHealth();
 	int getAttack();
-	void takeDamage(int damage);
+	void takeDamage(/*Player* p*/);
 };
 

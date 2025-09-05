@@ -12,6 +12,8 @@ Lizardman::Lizardman(int level)
 
 	uniform_int_distribution<int> dist(level * 10, level * 20);
 	attack = dist(gen);
+
+	name = "Lizardman";
 }
 
 string Lizardman::getName()
@@ -29,7 +31,15 @@ int Lizardman::getAttack()
 	return attack;
 }
 
-void Lizardman::takeDamage(int damage)
+void Lizardman::takeDamage(/*Player* p*/)
 {
-
+	/*if (health > p.getattack)                      
+	{ 
+		health -= p.getattack; 
+	}
+	else 
+	{ 
+		health = 0;
+		cout << name << "을(를) 처치했습니다!" << endl;
+	}*/            
 }

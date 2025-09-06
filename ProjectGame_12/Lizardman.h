@@ -1,5 +1,6 @@
 #pragma once
 #include "Monster.h"
+#include "Player.h"
 
 class Lizardman : public Monster
 {
@@ -9,10 +10,11 @@ private:
 	int attack;
 
 public:
-	Lizardman(int level);
+	Lizardman();
 	string getName();
 	int getHealth();
-	int getAttack();
-	void takeDamage(/*Player* p*/);
+	int getAttack() ;
+	void roar();
+	void takeDamage(Player* p);
 };
 

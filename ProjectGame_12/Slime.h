@@ -1,5 +1,6 @@
 #pragma once
 #include "Monster.h"
+#include "Player.h"
 
 class Slime :public Monster
 {
@@ -9,10 +10,11 @@ private:
 	int attack;
 
 public:
-	Slime(int level);
+	Slime();
 	string getName();
 	int getHealth();
 	int getAttack();
-	void takeDamage(/*Player* p*/);
+	void roar();
+	void takeDamage(Player* p);
 };
 

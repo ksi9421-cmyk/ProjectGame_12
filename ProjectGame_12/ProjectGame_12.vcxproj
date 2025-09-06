@@ -126,6 +126,8 @@
     <ClCompile Include="Boss_RedDragon.cpp" />
     <ClCompile Include="Goblin.cpp" />
     <ClCompile Include="Lizardman.cpp" />
+    <ClCompile Include="MonsterFactory.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Slime.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
@@ -134,6 +136,8 @@
     <ClInclude Include="Goblin.h" />
     <ClInclude Include="Lizardman.h" />
     <ClInclude Include="Monster.h" />
+    <ClInclude Include="MonsterFactory.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Slime.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

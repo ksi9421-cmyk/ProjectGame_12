@@ -1,5 +1,7 @@
 #pragma once
 #include "Monster.h"
+#include "Player.h"
+
 
 class Goblin : public Monster
 {
@@ -9,10 +11,11 @@ private:
 	int attack;
 
 public:
-	Goblin(int level);
+	Goblin();
 	string getName();
 	int getHealth();
 	int getAttack();
-	void takeDamage(/*Player* p*/);
+	void roar();
+	void takeDamage(Player* p);
 };
 

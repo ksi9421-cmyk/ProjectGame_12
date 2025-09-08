@@ -7,16 +7,16 @@ using namespace std;
 class GameManager
 {
 private:
-	int Round = 0;
+	static int Round;
 	
 
 public : 
-	
 	void GameStart();
 	void NewRound();
 	void PlayerTrun();
 	void PlayerAttack();
 	void MonsterAttack();
 	void BossAttack();
-	void OpenShop();
+
+	int getRound();
 };

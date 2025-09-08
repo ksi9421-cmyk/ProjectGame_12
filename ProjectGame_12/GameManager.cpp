@@ -1,7 +1,14 @@
 #include "GameManager.h"
+#include "Monster.h"
+#include "MonsterFactory.h"
+#include "Boss_RedDragon.h"
+#include "Player.h"
+#include "Shop.h"
 #include<iostream>
 
 using namespace std;
+
+Shop shop;
 
 void GameManager::GameStart()
 {
@@ -12,23 +19,33 @@ void GameManager::GameStart()
 	//cout << "HP : " << player.gethp() << "공격력 : " << player.getattack() << endl;
 }
 
+int GameManager::Round = 1;
+
+int GameManager::getRound()
+{
+	return Round;
+}
+
 void GameManager::NewRound()
 {
-	Round++;
+	GameManager::getRound();
+	
 	cout << "======" << Round << "층 Monster!!======\n";
 
 	if (Round == 10)
 	{
 		cout << "*****B.O.S.S!!!*****\n";
-		//보스()
-		// cout << "Boss HP : " << 보스HP << "Boss Attack : " << 보스Attack <<endl;
+		Boss_RedDragon Boss;
+		cout << "Boss HP : " << Boss.getHealth() << "Boss Attack : " << Boss.getAttack() <<endl;
 	}
 	else
 	{
 		cout << "*****Monster 등장!!*****\n";
-		//잡몹()
-		// cout << "Monster HP : " << 몬스터HP << "Monster Attack : " << 몬스터Attack << endl;
+		auto monster = MonsterFactory::CreateRandomMonster();
+		monster->roar();
+		cout << "Monster HP : " << monster->getHealth() << "Monster Attack : " << monster->getAttack() << endl;
 	}
+	GameManager::Round += 1;
 }
 
 void GameManager::PlayerTrun()
@@ -55,11 +72,11 @@ void GameManager::PlayerTrun()
 		case 2:
 			//cout << " " << 인벤토리 << endl;
 			cout << "어떤 아이템을 사용하시겠습니까? : \n";
+			cin >> InvenChoice;
 			cout << "1. Hp물약\n";
 			cout << "2. Attack물약\n";
 			cout << "3. 돌아가기\n";
 			//cout << "HP : " << PlayerHp << "Attack : " << PlayerAttack << endl;
-			cin >> InvenChoice;
 
 			switch (InvenChoice)
 			{
@@ -105,19 +122,38 @@ void GameManager::PlayerTrun()
 
 void GameManager::PlayerAttack()
 {
-	//cout << PlayerName << "이(가)" << monster.name << "을(를) 공격했다!!\n";
-	//Monster.hp -= playerAttack;
-	//cout << playerAttack << "만큼 데미지를 입혔다!!\n";
+	/*cout << PlayerName << "이(가)" << monster.name << "을(를) 공격했다!!\n";
+	Monster.hp -= playerAttack;
+	cout << playerAttack << "만큼 데미지를 입혔다!!\n";
 
-	//if (Monster.hp <= 0)
-	//{
-	// cout << Monster.name << "을(를) 처치했다!!\n";
-	//	NewRound();
-	//}
-	//else
-	//{
-	//	PlayerTrun();
-	//}
+	while (1)
+	{
+		if (Monster.hp <= 0)
+		{
+			int NextChoice = 0;
+			cout << Monster.name << "을(를) 처치했다!!\n";
+			cout << "다음 층으로 넘어가시겠습니까? : \n";
+			cin >> NextChoice;
+			cout << "1. 다음 층\n";
+			cout << "2. 상점\n";
+
+			switch(NextChoice)
+			{
+			case 1:
+				NewRound();
+				break;
+
+			case 2:
+				
+
+			}
+		}
+		else
+		{
+			PlayerTrun();
+			break;
+		}
+	}*/
 }
 
 void GameManager::MonsterAttack()
@@ -125,7 +161,6 @@ void GameManager::MonsterAttack()
 	//cout << monster.name << "이(가)" << Playername << "을(를) 공격했다!!\n";
 	//Player.HP -= Monster.Attack;
 	//cout << Monster.Attack << "만큼 데미지를 입혔다!!\n";
-	
 	//if (Player.hp <= 0)
 	//{
 	// cout << Monster.name << "에게 당했다...\n";
@@ -146,71 +181,3 @@ void GameManager::BossAttack()
 	//}
 }
 
-void GameManager::OpenShop()
-{
-	int ShopChoice;
-
-	cout << "=====상점=====";
-	//cout << "현재 Gold : " << player.gold << endl;
-	cout << "1. Hp 100 회복물약 (10Gold)\n";
-	cout << "2. Hp 50% 회복물약 (20Gold)\n";
-	cout << "3. 30% 최대 체력 방어구(80Gold)\n";
-	cout << "4. 20% 공격력 무기(20Gold)\n";
-	cout << "5. 상점 나가기\n";
-	cin >> ShopChoice;
-
-	switch (ShopChoice)
-	{
-	case 1:
-		//if(player.gold >= 10)
-		//{
-			//inventory.HPpotion += Hp100potion;
-			//cout << "Hp 100 회복물약을 구매하였습니다.\n";
-			//cout << "현재 인벤토리 : " << inventory.HPpotion << endl;
-		//}
-		//else
-		//{
-		//	cout << "골드가 부족합니다.\n";
-		//}
-		break;
-
-	case 2:
-		//if(player.gold >= 20)
-		//{
-			//inventory.HPpercentpotion += Hp50percentpotion;
-			//cout << "Hp 50% 회복물약을 구매하였습니다.\n";
-			//cout << "현재 인벤토리 : " << inventory.HPpercentpotion << endl;
-		//}
-		//else
-		//{
-		//	cout << "골드가 부족합니다.\n";
-		//}
-
-	case 3:
-		//if(player.gold >= 80)
-		//{
-			//inventory.HPArmor += HPArmor
-			//cout << "방어구를 구매하였습니다.\n";
-			//cout << "현재 인벤토리 : " << inventory.HPArmor << endl;
-		//}
-		//else
-		//{
-		//	cout << "골드가 부족합니다.\n";
-		//}
-
-	case 4:
-		//if(player.gold >= 80)
-		//{
-			//inventory.Sword += Sword
-			//cout << "무기를 구매하였습니다.\n";
-			//cout << "현재 인벤토리 : " << inventory.Sword << endl;
-		//}
-		//else
-		//{
-		//	cout << "골드가 부족합니다.\n";
-		//}
-	case 5:
-		cout << "상점을 나갑니다.\n";
-		break;
-	}
-}

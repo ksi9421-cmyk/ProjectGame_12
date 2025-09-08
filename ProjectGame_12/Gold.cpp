@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Gold::Gold(int startAmount) : amount(startAmount) {} //±âº»µ·0¿ø
+Gold::Gold(int startAmount) : amount(0) {} //±âº»µ·0¿ø
 
 void Gold::add() 
 {

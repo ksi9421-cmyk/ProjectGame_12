@@ -129,7 +129,6 @@
     <ClCompile Include="MonsterFactory.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Slime.cpp" />
-    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Boss_RedDragon.h" />

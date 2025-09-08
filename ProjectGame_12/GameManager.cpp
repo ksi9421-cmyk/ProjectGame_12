@@ -4,7 +4,7 @@
 #include "Boss_RedDragon.h"
 #include "Player.h"
 #include "Shop.h"
-#include<iostream>
+#include "Gold.h"
 
 using namespace std;
 
@@ -122,7 +122,7 @@ void GameManager::PlayerTrun()
 
 void GameManager::PlayerAttack()
 {
-	/*cout << PlayerName << "이(가)" << monster.name << "을(를) 공격했다!!\n";
+	/*cout << PlayerName << "이(가)" <<  << "을(를) 공격했다!!\n";
 	Monster.hp -= playerAttack;
 	cout << playerAttack << "만큼 데미지를 입혔다!!\n";
 
@@ -144,8 +144,9 @@ void GameManager::PlayerAttack()
 				break;
 
 			case 2:
-				
-
+				shop;
+				shop.buyItem(playerGold);
+				break;
 			}
 		}
 		else
@@ -164,20 +165,27 @@ void GameManager::MonsterAttack()
 	//if (Player.hp <= 0)
 	//{
 	// cout << Monster.name << "에게 당했다...\n";
-	//	게임오버();
+	//	GameOver();
 	//}
 }
 
 void GameManager::BossAttack()
 {
-	//cout << monster.name << "이(가)" << Playername << "을(를) 공격했다!!\n";
-	//Player.HP -= Monster.Attack;
-	//cout << Monster.Attack << "만큼 데미지를 입혔다!!\n";
+	/*Boss_RedDragon Boss;
+	cout << Boss.getName() << "이(가)" << Player.name << "을(를) 공격했다!!\n";
+	Player.hp -= Boss.getAttack();
+	cout << Boss.getAttack() << "만큼 데미지를 입혔다!!\n";
 
-	//if (Player.hp <= 0)
-	//{
-	// cout << Monster.name << "에게 당했다...\n";
-	//	게임오버();
-	//}
+	if (Player.hp <= 0)
+	{
+	 cout << Boss.getName() << "에게 당했다...\n";
+	 GameOver();
+	}*/
+}
+
+int GameManager::GameOver()
+{
+	cout << "게임에서 패배하였습니다\n";
+	exit(0);
 }
 

@@ -17,6 +17,6 @@ public :
 	void PlayerAttack();
 	void MonsterAttack();
 	void BossAttack();
-
+	int GameOver();
 	int getRound();
 };

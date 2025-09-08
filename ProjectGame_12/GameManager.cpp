@@ -8,8 +8,6 @@
 
 using namespace std;
 
-Shop shop;
-
 void GameManager::GameStart()
 {
 	cout << "======TOP Monster======\n";
@@ -122,6 +120,8 @@ void GameManager::PlayerTrun()
 
 void GameManager::PlayerAttack()
 {
+	
+
 	/*cout << PlayerName << "이(가)" <<  << "을(를) 공격했다!!\n";
 	Monster.hp -= playerAttack;
 	cout << playerAttack << "만큼 데미지를 입혔다!!\n";
@@ -144,7 +144,7 @@ void GameManager::PlayerAttack()
 				break;
 
 			case 2:
-				shop;
+				Shop shop;
 				shop.buyItem(playerGold);
 				break;
 			}

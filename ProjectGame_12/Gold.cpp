@@ -1,13 +1,21 @@
 #include "Gold.h"
 #include <iostream>
+#include <random>
 
 using namespace std;
 
 Gold::Gold(int startAmount) : amount(startAmount) {} //기본돈0원
 
-void Gold::add(int value) 
+void Gold::add() 
 {
-	amount += value; 
+	random_device rd;
+	mt19937 gen(rd());
+	uniform_int_distribution<int> goldDist(10, 20); // 10~20골드 랜덤 추가
+
+	int bonus = goldDist(gen);
+	amount += bonus;
+
+	cout << bonus << " Gold 보너스를 추가로 얻었습니다!" << endl;
 }
 
 bool Gold::spend(int value) 

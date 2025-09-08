@@ -34,6 +34,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
+	    <Filter>소스 파일</Filter>
+	</ClCompile>
+    <ClCompile Include="Shop.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Gold.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,7 +71,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManager.h">
-      <Filter>헤더 파일</Filter>
+	    <Filter>헤더 파일</Filter>
+	</ClInclude>
+	<ClInclude Include="Shop.h">
+        <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Gold.h">
+        <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -143,6 +143,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManager.h" />
+    <ClCompile Include="Gold.cpp" />
+    <ClCompile Include="Shop.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Gold.h" />
+    <ClInclude Include="Shop.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

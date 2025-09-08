@@ -52,10 +52,11 @@ void Shop::buyItem(Gold& playerGold)
         if (playerGold.spend(selectItem.price))
         {
             cout << selectItem.name << "을 구매하셨습니다." << endl;
+            playerGold.add();
         }
         else
         {
-            cout << "거지이십니다. 다시 선택하세요 ^*^" << endl;
+            cout << "골드가 부족합니다. 다시 선택하세요." << endl;
         }
 
         // 반복문이 돌아가면 맨 위 골드가 갱신되면서 상점 화면 다시 출력

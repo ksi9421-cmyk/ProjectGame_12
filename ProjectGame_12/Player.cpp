@@ -14,17 +14,17 @@ void Player::levelUp()
 		Attack += 10;
 		Exp = 0;
 
-		cout << "·¹º§ ¾÷! ÇöÀç ·¹º§: " << Level << endl;
-		cout << "°ø°Ý·Â: " << Attack << ", Ã¼·Â: " << Health << endl << endl;
+		cout << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½! ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: " << Level << endl;
+		cout << "ï¿½ï¿½ï¿½Ý·ï¿½: " << Attack << ", Ã¼ï¿½ï¿½: " << Health << endl << endl;
 	}
 }
 
 void Player::printPlayerStatus() const {
-	cout << "----- ÇÃ·¹ÀÌ¾î »óÅÂ -----" << endl;
-	cout << "       °ø°Ý·Â: " << Attack << endl;
+	cout << "----- ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ -----" << endl;
+	cout << "       ï¿½ï¿½ï¿½Ý·ï¿½: " << Attack << endl;
 	cout << "           HP: " << Health << endl;
 	cout << "          Lv.: " << Level << endl;
-	cout << "       ¼ÒÁö±Ý: " << Gold << endl;
+	cout << "       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: " << Gold << endl;
 	cout << "=========================" << endl;
 }
 

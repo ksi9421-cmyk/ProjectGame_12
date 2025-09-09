@@ -14,17 +14,17 @@ void Player::levelUp()
 		Attack += 10;
 		Exp = 0;
 
-		cout << "���� ��! ���� ����: " << Level << endl;
-		cout << "���ݷ�: " << Attack << ", ü��: " << Health << endl << endl;
+		cout << "Level: " << Level << endl;
+		cout << "Attack: " << Attack << ", HP: " << Health << endl << endl;
 	}
 }
 
 void Player::printPlayerStatus() const {
-	cout << "----- �÷��̾� ���� -----" << endl;
-	cout << "       ���ݷ�: " << Attack << endl;
+	cout << "----- Player stat -----" << endl;
+	cout << "       Attack: " << Attack << endl;
 	cout << "           HP: " << Health << endl;
 	cout << "          Lv.: " << Level << endl;
-	cout << "       ������: " << Gold << endl;
+	cout << "         Gold: " << Gold << endl;
 	cout << "=========================" << endl;
 }
 

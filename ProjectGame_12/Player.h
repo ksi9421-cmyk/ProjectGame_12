@@ -1,8 +1,12 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <vector>
+
+
 using namespace std;
 
+class Bag;
 class item;
 class Player {
 private:
@@ -12,12 +16,11 @@ private:
     int maxHP;
     int Attack;
     int Exp;
+    std::unique_ptr<Bag> bag;
 
-
-public:
     Player();
-    Player(std::string nickname, int level, int health, int attack, int exp, int maxHP);
-
+    
+public:
     void levelUp();
     void takeDamage(int Damage);
     void openInventory();
@@ -28,7 +31,7 @@ public:
     int getmaxHP();
     int getHealth();
     int getAttack();
-    static Player& getinstance();
+
     string getName();
-    string setName(string nickname);
+    string setName(const string& nickname);
 };

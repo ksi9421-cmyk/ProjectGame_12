@@ -8,6 +8,10 @@
 
 using namespace std;
 
+GameManager::GameManager() : player(make_shared<Player>())
+{
+}
+
 void GameManager::GameStart()
 {
 	cout << "======TOP Monster======\n";
@@ -16,10 +20,10 @@ void GameManager::GameStart()
 	string nickname;
 	cin >> nickname;
 
-	Player::getinstance().setName(nickname);
+	player.lock()->setName(nickname);
 
-	cout << Player::getinstance().getName(); << "으로 설정되었습니다!\n";
-	cout << "HP : " << player.gethp() << "공격력 : " << player.getattack() << endl;
+	cout << player.lock()->getName() << "으로 설정되었습니다!\n";
+//	cout << "HP : " << Player::getinstance().getHp() << "공격력 : " << player.getattack() << endl;
 }
 
 int GameManager::Round = 1;

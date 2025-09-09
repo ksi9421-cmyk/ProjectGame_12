@@ -8,7 +8,10 @@ class GameManager
 {
 private:
 	static int Round;
-	
+
+	std::weak_ptr<Player> player;
+
+	GameManager();
 
 public : 
 	void GameStart();

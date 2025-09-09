@@ -1,9 +1,12 @@
 #include "Player.h"
+#include "Bag.h"
 
 using namespace std;
 
-Player::Player(string nickname, int level, int health, int attack, int exp, int maxHP) :
-	Name(nickname), Level(1), Health(200), Attack(30), Exp(0), maxHP(200) {}
+Player::Player() :
+	Name("Player"), Level(1), Health(200), Attack(30), Exp(0), maxHP(200), bag(std::make_unique<Bag>())
+{
+}
 
 void Player::levelUp()
 {
@@ -32,12 +35,14 @@ void Player::takeDamage(int Damage)
 
 void Player::openInventory() 
 {
-
+	bag->PrintAllItems();
+	bag->printInfo();
 }
 
 void Player::useItem()
 {
-
+	bag->printInfo();
+	bag->useAt();
 }
 
 void Player::heal(int amount)
@@ -76,13 +81,7 @@ string Player::getName()
 	return Name;
 }
 
-static Player&::getinstance()
-{
-	static Player instance;
-	return instance;
-}
-
-string Player::setName(string nickname)
+string Player::setName(const string& nickname)
 {
 	Name = nickname;
 }

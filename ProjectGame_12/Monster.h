@@ -3,6 +3,7 @@
 #include <string>
 #include <random>
 #include "Player.h"
+#include "GameManager.h"
 using namespace std;
 
 

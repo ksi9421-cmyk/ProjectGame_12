@@ -3,7 +3,7 @@
 
 Slime::Slime()
 {
-	int level = 1;
+	int level = GameManager::getRound();
 	random_device rd;
 	mt19937 gen(rd());
 
@@ -39,9 +39,9 @@ void Slime::roar()
 
 void Slime::takeDamage(Player* p)
 {
-	if (health > p->getattack())
+	if (health > p->getAttack())
 	{
-		health -= p->getattack();
+		health -= p->getAttack();
 	}
 	else
 	{

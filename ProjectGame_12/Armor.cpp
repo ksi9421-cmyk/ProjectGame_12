@@ -1,5 +1,5 @@
 #include "Item.h"
-#include "Player.h"
+//#include "Player.h"
 #include "Bag.h"
 #include <string>
 #include <utility>
@@ -11,8 +11,8 @@ Armor::Armor(std::string name, int price, std::string info, float HPBoostRatio)
 }
 Armor::~Armor() = default;
 
-void Armor::use(Player& target) {
-	HPBoost = static_cast<int>(target.getMaxHP() * (HPBoostRatio / 30.f));
-	target.addMaxHP(HPBoost);
-	std::cout << "[cloak]" << getName() << "at used max hp" << HPBoost << "% up.\n";
+//void Armor::use(Player& target) {
+	//HPBoost = static_cast<int>(target.getMaxHP() * (HPBoostRatio / 30.f));
+	//target.addMaxHP(HPBoost);
+	//std::cout << "[cloak]" << getName() << "at used max hp" << HPBoost << "% up.\n";
 }

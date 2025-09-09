@@ -1,5 +1,5 @@
 #include "Item.h"
-#include "player.h"
+//#include "player.h"
 #include "Bag.h"
 #include <iostream>
 #include <string>
@@ -13,8 +13,8 @@ Weapon::Weapon(std::string name, int price, std::string info, int damage)
 Weapon::~Weapon() = default;
 
 void Weapon::use(Player& target) {
-	int bonus = static_cast<int>(target.getdamage() * 0.2);
-	target.adddamage(bonus);
+	//int bonus = static_cast<int>(target.getdamage() * 0.2);
+	//target.adddamage(bonus);
 
-	std::cout << "steal sword." << getName() << " damage 20% up.(+" << bonus << ")\n";
+	//std::cout << "steal sword." << getName() << " damage 20% up.(+" << bonus << ")\n";
 }

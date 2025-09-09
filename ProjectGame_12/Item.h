@@ -4,9 +4,7 @@
 #include <iostream>
 #include <random>
 
-
 class Player;
-
 
 class Item
 {

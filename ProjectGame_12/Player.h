@@ -1,8 +1,29 @@
 #pragma once
-class Player
-{
-	int hp;
-	int attack;
-	int level;
-};
+#include <iostream>
+#include <string>
+#include <vector>
 
+class item;
+class Player {
+private:
+    std::string Name;
+    int Level;
+    int Health;
+    int Attack;
+    int Gold;
+    int Exp;
+
+
+public:
+    Player(std::string nickname, int level, int health, int attack, int gold, int exp);
+
+    void levelUp();
+    void printPlayerStatus() const;
+    void takeDamage(int Damage);
+    void openInventory();
+    void useItem();
+    int getHealth();
+    int getAttack();
+    int getGold();
+
+};

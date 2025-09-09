@@ -73,3 +73,19 @@ int Player::getGold()
 {
 	return Gold;
 }
+
+string Player::getName()
+{
+	return Name;
+}
+
+static Player&::getinstance()
+{
+	static Player instance;
+	return instance;
+}
+
+string Player::setName(string nickname)
+{
+	Name = nickname;
+}

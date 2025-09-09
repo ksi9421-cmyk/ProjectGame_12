@@ -12,9 +12,14 @@ void GameManager::GameStart()
 {
 	cout << "======TOP Monster======\n";
 	cout << "캐릭터 이름 : \n";
-	//cin >> PlayerName;
-	//cout << PlayerName << "으로 설정되었습니다!\n";
-	//cout << "HP : " << player.gethp() << "공격력 : " << player.getattack() << endl;
+	
+	string nickname;
+	cin >> nickname;
+
+	Player::getinstance().setName(nickname);
+
+	cout << Player::getinstance().getName(); << "으로 설정되었습니다!\n";
+	cout << "HP : " << player.gethp() << "공격력 : " << player.getattack() << endl;
 }
 
 int GameManager::Round = 1;

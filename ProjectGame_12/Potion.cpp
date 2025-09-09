@@ -1,5 +1,5 @@
 #include "Item.h"
-//#include "Player.h"
+#include "Player.h"
 #include "Bag.h"
 #include <string>
 #include <utility>
@@ -18,12 +18,12 @@ Potion::~Potion() = default;
 
 void Potion::use(Player& target) {
 	if (isPercent) {
-		//int healValue = static_cast<int>(target.getMaxHP() * healRatio);
-		//target.heal(healValue);
-		//std::cout << "[elixirr]" << getName() << "at used max hp " << (healRatio * 50) << "% heal.(+" << healValue << ")\n";
+		int healValue = static_cast<int>(target.getHealth() * healRatio);
+		target.heal(healValue);
+		std::cout << "[elixirr]" << getName() << "at used max hp " << (healRatio * 50) << "% heal.(+" << healValue << ")\n";
 	}
 	else {
-		//target.heal(healAmount);
+		target.heal(healAmount);
 		std::cout << " [Potion]" << getName() << "at used " << healAmount << "heal.\n";
 	}
 }

@@ -2,8 +2,8 @@
 
 using namespace std;
 
-Player::Player(string nickname, int level, int health, int attack, int gold, int exp) :
-	Name(nickname), Level(1), Health(200), Attack(30), Gold(0), Exp(0) {}
+Player::Player(string nickname, int level, int health, int attack, int gold, int exp, int maxHP) :
+	Name(nickname), Level(1), Health(200), Attack(30), Gold(0), Exp(0), maxHP(200) {}
 
 void Player::levelUp()
 {
@@ -11,11 +11,12 @@ void Player::levelUp()
 	{
 		Level++;
 		Health += 50;
+		maxHP += 50;
 		Attack += 10;
 		Exp = 0;
 
 		cout << "Level: " << Level << endl;
-		cout << "Attack: " << Attack << ", HP: " << Health << endl << endl;
+		cout << "Attack Up: " << Attack << ", HP Up: " << Health << endl << endl;
 	}
 }
 
@@ -56,6 +57,16 @@ void Player::heal(int amount)
 void Player::powerUp(int amount)
 {
 	Attack += amount;
+}
+
+void Player::addmaxHP(int amount)
+{
+	maxHP += amount;
+}
+
+int Player::getmaxHP()
+{
+	return maxHP;
 }
 
 

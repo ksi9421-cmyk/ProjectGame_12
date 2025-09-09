@@ -11,7 +11,6 @@ private:
     int Attack;
     int Gold;
     int Exp;
-    int size_;
 
 
 public:

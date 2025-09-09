@@ -14,7 +14,8 @@ public :
 	void GameStart();
 	void NewRound();
 	void PlayerTrun();
-	void PlayerAttack();
+	void PlayerMonsterAttack();
+	void PlayerBossAttack();
 	void MonsterAttack();
 	void BossAttack();
 	int GameOver();

@@ -118,20 +118,20 @@ void GameManager::PlayerTrun()
 	}
 }
 
-void GameManager::PlayerAttack()
+void GameManager::PlayerMonsterAttack()
 {
-	
+	/*auto monster = MonsterFactory::CreateRandomMonster();
 
-	/*cout << PlayerName << "이(가)" <<  << "을(를) 공격했다!!\n";
-	Monster.hp -= playerAttack;
+	cout << PlayerName << "이(가)" << monster->getName() << "을(를) 공격했다!!\n";
+	monster->getHealth() -= playerAttack;
 	cout << playerAttack << "만큼 데미지를 입혔다!!\n";
 
 	while (1)
 	{
-		if (Monster.hp <= 0)
+		if (monster->getHealth() <= 0)
 		{
 			int NextChoice = 0;
-			cout << Monster.name << "을(를) 처치했다!!\n";
+			cout << monster->getName() << "을(를) 처치했다!!\n";
 			cout << "다음 층으로 넘어가시겠습니까? : \n";
 			cin >> NextChoice;
 			cout << "1. 다음 층\n";
@@ -157,16 +157,40 @@ void GameManager::PlayerAttack()
 	}*/
 }
 
+void GameManager::PlayerBossAttack()
+{
+	/*Boss_RedDragon Boss;
+
+	cout << PlayerName << "이(가)" << Boss.getName() << "을(를) 공격했다!!\n";
+	Boss.getHealth() -= playerAttack;
+	cout << playerAttack << "만큼 데미지를 입혔다!!\n";
+
+	while (1)
+	{
+		if (Boss.getHealth() <= 0)
+		{
+			cout << Boss.getName() << "을(를) 처치했다!!\n";
+		}
+		else
+		{
+			PlayerTrun();
+			break;
+		}
+	}*/
+}
+
 void GameManager::MonsterAttack()
 {
-	//cout << monster.name << "이(가)" << Playername << "을(를) 공격했다!!\n";
-	//Player.HP -= Monster.Attack;
-	//cout << Monster.Attack << "만큼 데미지를 입혔다!!\n";
-	//if (Player.hp <= 0)
-	//{
-	// cout << Monster.name << "에게 당했다...\n";
-	//	GameOver();
-	//}
+	/*auto monster = MonsterFactory::CreateRandomMonster();
+
+	cout << monster->getName() << "이(가)" << Playername << "을(를) 공격했다!!\n";
+	Player.HP -= monster->getAttack();
+	cout << monster->getAttack() << "만큼 데미지를 입혔다!!\n";
+	if (Player.hp <= 0)
+	{
+	 cout << monster->getName() << "에게 당했다...\n";
+	 GameOver();
+	}*/
 }
 
 void GameManager::BossAttack()

@@ -48,6 +48,16 @@ void Player::useItem()
 
 }
 
+void Player::heal(int amount)
+{
+	Health += amount;
+}
+
+void Player::powerUp(int amount)
+{
+	Attack += amount;
+}
+
 
 int Player::getHealth()
 {

@@ -21,6 +21,8 @@ public:
     void takeDamage(int Damage);
     void openInventory();
     void useItem();
+    void heal(int amount);
+    void powerUp(int amount);
     int getHealth();
     int getAttack();
     int getGold();

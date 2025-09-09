@@ -1,5 +1,5 @@
 #include "Item.h"
-//#include "Player.h"
+#include "Player.h"
 #include "Bag.h"
 #include <iostream>
 #include <string>

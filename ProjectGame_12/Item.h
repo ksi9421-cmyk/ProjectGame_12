@@ -4,8 +4,8 @@
 #include <iostream>
 #include <random>
 
-class Player;
 
+class Player;
 class Item
 {
 private:
@@ -20,8 +20,8 @@ public:
 	}
 	Item(std::string name, int price, std::string info);
 	virtual ~Item();
-
-	virtual void use(Player& target) = 0;
+	
+	virtual void use(Player* target) = 0;
 
 	const std::string  getName() const;
 	int getPrice() const;
@@ -42,7 +42,7 @@ public:
 	}
 	~Weapon();
 	Weapon(std::string name, int price, std::string info, int damage);;
-	void use(Player& target) override;
+	void use(Player* target);
 };
 class Armor : public Item
 {
@@ -56,7 +56,7 @@ public:
 	}
 	Armor(std::string name, int price, std::string info, float HPBoostRatio);
 	~Armor() override;
-		void use(Player& target) override;
+	void use(Player* target);
 };
 class Potion : public Item {
 public:
@@ -74,7 +74,7 @@ public:
 
 	~Potion() override;
 
-	void use(Player& target) override;
+	void use(Player* target);
 
 };
 

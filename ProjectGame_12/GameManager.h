@@ -9,7 +9,7 @@ class GameManager
 private:
 	static int Round;
 
-	std::weak_ptr<Player> player;
+	unique_ptr<Player> player;
 
 	GameManager();
 

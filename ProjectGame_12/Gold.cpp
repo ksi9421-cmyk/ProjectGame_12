@@ -4,7 +4,15 @@
 
 using namespace std;
 
-Gold::Gold(int startAmount) : amount(0) {} //기본돈0원
+Gold::Gold() : amount(0) {}  //기본 돈 0원
+
+Gold::Gold(int startAmount) : amount(startAmount) {} // 원하는 시작 금액으로 초기화
+
+Gold& Gold::getinstance()
+{
+	static Gold instance;
+	return instance;
+}
 
 void Gold::add() 
 {

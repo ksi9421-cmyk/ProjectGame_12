@@ -21,5 +21,5 @@ private:
 public:
 
 	Shop();
-	void buyItem(Gold &playerGold); // 플레이어 돈 참조해서 차감
+	void buyItem(); // 골드 클래스 참조해서 차감
 };

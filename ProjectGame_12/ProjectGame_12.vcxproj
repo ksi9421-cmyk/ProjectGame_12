@@ -127,6 +127,7 @@
     <ClCompile Include="Goblin.cpp" />
     <ClCompile Include="Lizardman.cpp" />
     <ClCompile Include="MonsterFactory.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Slime.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +136,7 @@
     <ClInclude Include="Lizardman.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="MonsterFactory.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Slime.h" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="Main.cpp" />

@@ -36,11 +36,15 @@
               "RelativeDocumentMoniker": "ProjectGame_12\\GameManager.cpp",
               "ToolTip": "C:\\UnraelEngine\\ProjectGame_12\\ProjectGame_12\\GameManager.cpp",
               "RelativeToolTip": "ProjectGame_12\\GameManager.cpp",
-              "ViewState": "AgIAAOIAAAAAAAAAAAAtwPcAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAH4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-09T03:46:32.622Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
@@ -52,12 +56,7 @@
               "RelativeToolTip": "ProjectGame_12\\GameManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-09T04:08:27.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2025-09-09T04:08:27.791Z"
             },
             {
               "$type": "Document",
@@ -69,8 +68,7 @@
               "RelativeToolTip": "ProjectGame_12\\Player.cpp",
               "ViewState": "AgIAACcAAAAAAAAAAADwvz0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-09T08:16:08.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-09T08:16:08.117Z"
             },
             {
               "$type": "Document",
@@ -82,8 +80,7 @@
               "RelativeToolTip": "ProjectGame_12\\Player.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-09T08:07:30.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-09T08:07:30.932Z"
             }
           ]
         }

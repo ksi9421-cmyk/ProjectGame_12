@@ -41,7 +41,7 @@ void GameManager::MonsterRound()
 
 		while (1)
 		{
-			if (monster->getHealth() >= 0)
+			if (monster->getHealth() > 0)
 			{
 				cout << "======My Turn======\n";
 				cout << "선택해주세요 : \n";
@@ -51,14 +51,13 @@ void GameManager::MonsterRound()
 
 				switch (TrunChoice)
 				{
+
 				case 1:
 					cout << Player::getinstance().getName() << "이(가)" << monster->getName() << "을(를) 공격했다!!\n";
 					//monster->getHealth() -= Player::getinstance().getAttack();
 					cout << Player::getinstance().getAttack() << "만큼 데미지를 입혔다!!\n";
 					break;
-				}
-				switch (TrunChoice)
-				{
+				
 				case 2:
 					//cout << " " << 인벤토리 << endl;
 					cout << "어떤 아이템을 사용하시겠습니까? : \n";
@@ -82,10 +81,7 @@ void GameManager::MonsterRound()
 						//	cout << "HP 물약이 부족합니다.\n"
 						//}
 						break;
-					}
-
-					switch (InvenChoice)
-					{
+					
 					case 2:
 						//if (inventory.Attackpotion > 0)
 						//{
@@ -98,15 +94,15 @@ void GameManager::MonsterRound()
 						//	cout << "Attack 물약이 부족합니다.";
 						//}
 						break;
-					}
-
-					switch (InvenChoice)
-					{
+					
 					case 3:
 						cout << "돌아갑니다";
 						break;
 					}
 				}
+				cout << monster->getName() << "이(가)" << Player::getinstance().getName() << "을(를) 공격했다!!\n";
+				//Player::getinstance().getHealth() -= monster->getAttack();
+				cout << monster->getAttack() << "만큼 데미지를 입혔다!!\n";
 			}
 			else if (monster->getHealth() <= 0)
 			{
@@ -128,18 +124,15 @@ void GameManager::MonsterRound()
 					//shop.buyItem(playerGold);
 					break;
 				}
+				break;
 			}
-			cout << monster->getName() << "이(가)" << Player::getinstance().getName() << "을(를) 공격했다!!\n";
-			//Player::getinstance().getHealth() -= monster->getAttack();
-			cout << monster->getAttack() << "만큼 데미지를 입혔다!!\n";
+			else if (Player::getinstance().getHealth() <= 0)
+			{
+				cout << monster->getName() << "에게 당했다...\n";
+				GameOver();
+			}
 		}
 		Round++;
-	}
-
-	if (Player::getinstance().getHealth() <= 0)
-	{
-		cout << monster->getName() << "에게 당했다...\n";
-		GameOver();
 	}
 }
 
@@ -174,9 +167,7 @@ void GameManager::BossRound()
 					//monster->getHealth() -= Player::getinstance().getAttack();
 					cout << Player::getinstance().getAttack() << "만큼 데미지를 입혔다!!\n";
 					break;
-				}
-				switch (TrunChoice)
-				{
+			
 				case 2:
 					//cout << " " << 인벤토리 << endl;
 					cout << "어떤 아이템을 사용하시겠습니까? : \n";
@@ -200,10 +191,7 @@ void GameManager::BossRound()
 						//	cout << "HP 물약이 부족합니다.\n"
 						//}
 						break;
-					}
 
-					switch (InvenChoice)
-					{
 					case 2:
 						//if (inventory.Attackpotion > 0)
 						//{
@@ -216,10 +204,7 @@ void GameManager::BossRound()
 						//	cout << "Attack 물약이 부족합니다.";
 						//}
 						break;
-					}
 
-					switch (InvenChoice)
-					{
 					case 3:
 						cout << "돌아갑니다";
 						break;

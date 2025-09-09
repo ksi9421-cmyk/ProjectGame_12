@@ -2,6 +2,8 @@
 
 #include <iostream>
 #include <string>
+#include "Player.h"
+
 using namespace std;
 
 class GameManager
@@ -9,15 +11,14 @@ class GameManager
 private:
 	static int Round;
 
-	std::weak_ptr<Player> player;
+	weak_ptr<Player> player;
 
 	GameManager();
 
-public : 
+public:
 	void GameStart();
-	void NewRound();
-	void MonsterBattle();
-	void BossBttle();
+	void MonsterRound();
+	void BossRound();
 	int GameOver();
 	static int getRound() { return Round; }
 };

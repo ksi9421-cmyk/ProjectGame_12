@@ -1,5 +1,6 @@
 #include "Item.h"
 #include "Player.h"
+#include "Bag.h"
 #include <string>
 #include <utility>
 #include <vector>
@@ -19,10 +20,10 @@ void Potion::use(Player& target) {
 	if (isPercent) {
 		int healValue = static_cast<int>(target.getMaxHP() * healRatio);
 		target.heal(healValue);
-		std::cout << "[엘릭서]" << getName() << "을 사용하여 최대 HP의 " << (healRatio * 100) << "%만큼 회복했습니다.(+" << healValue << ")\n";
+		std::cout << "[elixirr]" << getName() << "at used max hp " << (healRatio * 50) << "% heal.(+" << healValue << ")\n";
 	}
 	else {
 		target.heal(healAmount);
-		std::cout << " [포션]" << getName() << "을 사용하여 " << healAmount << "만큼 회복했습니다.\n";
+		std::cout << " [Potion]" << getName() << "at used " << healAmount << "heal.\n";
 	}
 }

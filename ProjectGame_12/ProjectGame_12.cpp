@@ -1,20 +1,44 @@
-﻿// ProjectGame_12.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
-//
+﻿#include "Player.h"
+#include "Item.h"
+#include "Bag.h"
 
-#include <iostream>
+int main() {
+    
+    Player hero("용사", 100, 200, 20);
+    hero.printStatus();
 
-int main()
-{
-    std::cout << "Hello World!\n";
+    
+    Bag bag;
+
+    // 아이템 추가
+    bag.addItem(std::make_unique<Weapon>("강철검", 300, "현재 공격력의 20% 증가", 0)); // damage는 0, 20%는 use()에서 계산
+    bag.addItem(std::make_unique<Armor>("전설의 갑옷", 500, "최대 HP 30% 증가", 0.3f));
+    bag.addItem(std::make_unique<Potion>("상처약", 50, "고정 100 회복", 100));
+    bag.addItem(std::make_unique<Potion>("엘릭서", 120, "최대 HP 50% 회복", 0.5f));
+
+    std::cout << "\n=== 가방 아이템 목록 ===\n";
+
+    std::cout << "\n=== 아이템 사용 ===\n";
+
+    // 무기 장착 (현재 공격력의 20% 증가)
+    bag.useAt(0, hero);
+    hero.printStatus();
+
+    // 아머 장착 (최대 HP 30% 증가)
+    bag.useAt(1, hero);
+    hero.printStatus();
+
+    // 포션 사용 (고정 100 회복)
+    hero.heal(-150); // HP 깎기 (테스트용)
+    hero.printStatus();
+    bag.useAt(2, hero);
+    hero.printStatus();
+
+    // 포션 사용 (최대 HP 50% 회복)
+    hero.heal(-180); // HP 더 깎기
+    hero.printStatus();
+    bag.useAt(3, hero);
+    hero.printStatus();
+
+    return 0;
 }
-
-// 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
-// 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴
-
-// 시작을 위한 팁: 
-//   1. [솔루션 탐색기] 창을 사용하여 파일을 추가/관리합니다.
-//   2. [팀 탐색기] 창을 사용하여 소스 제어에 연결합니다.
-//   3. [출력] 창을 사용하여 빌드 출력 및 기타 메시지를 확인합니다.
-//   4. [오류 목록] 창을 사용하여 오류를 봅니다.
-//   5. [프로젝트] > [새 항목 추가]로 이동하여 새 코드 파일을 만들거나, [프로젝트] > [기존 항목 추가]로 이동하여 기존 코드 파일을 프로젝트에 추가합니다.
-//   6. 나중에 이 프로젝트를 다시 열려면 [파일] > [열기] > [프로젝트]로 이동하고 .sln 파일을 선택합니다.

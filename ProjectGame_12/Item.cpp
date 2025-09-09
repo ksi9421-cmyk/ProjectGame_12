@@ -1,8 +1,11 @@
 #include "Item.h"
+#include "Player.h"
+#include "Bag.h"
 #include <iostream>
 #include <string>
 #include <utility>
 #include <vector>
+#include <random>
 
 using namespace std;
 

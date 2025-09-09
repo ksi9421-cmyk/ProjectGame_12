@@ -3,7 +3,7 @@
 
 Lizardman::Lizardman()
 {
-	int level = 1;
+	int level = GameManager::getRound();
 	random_device rd;
 	mt19937 gen(rd());
 
@@ -40,9 +40,9 @@ void Lizardman::roar()
 
 void Lizardman::takeDamage(Player* p)
 {
-	if (health > p->getattack())                      
+	if (health > p->getAttack())                      
 	{ 
-		health -= p->getattack(); 
+		health -= p->getAttack(); 
 	}
 	else 
 	{ 

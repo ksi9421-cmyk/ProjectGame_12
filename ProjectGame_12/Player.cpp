@@ -38,12 +38,14 @@ void Player::takeDamage(int Damage)
 	cout << "-" << Damage << endl;
 }
 
-void Player::openInventory() {
-	
+void Player::openInventory() 
+{
+
 }
 
 void Player::useItem()
 {
+
 }
 
 

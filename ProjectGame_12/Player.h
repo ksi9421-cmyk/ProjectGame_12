@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include <vector>
 
 class item;
 class Player {
@@ -12,6 +11,7 @@ private:
     int Attack;
     int Gold;
     int Exp;
+    int size_;
 
 
 public:

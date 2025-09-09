@@ -15,7 +15,7 @@ private:
 
 
 public:
-    Player(std::string nickname, int level, int health, int attack, int gold, int exp);
+    Player(string nickname, int level, int health, int attack, int gold, int exp);
 
     void levelUp();
     void printPlayerStatus() const;

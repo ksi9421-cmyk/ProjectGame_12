@@ -2,8 +2,8 @@
 
 using namespace std;
 
-Player::Player(string nickname, int level, int health, int attack, int gold, int exp)
-	:Name(nickname), Level(level), Health(health), Attack(attack), Gold(gold), Exp(exp) {}
+Player::Player(string nickname, int level, int health, int attack, int gold, int exp) :
+	Name(nickname), Level(1), Health(200), Attack(30), Gold(0), Exp(0) {}
 
 void Player::levelUp()
 {
@@ -40,10 +40,6 @@ void Player::takeDamage(int Damage)
 
 void Player::openInventory() {
 	
-}
-
-void Player::useItem()
-{
 }
 
 

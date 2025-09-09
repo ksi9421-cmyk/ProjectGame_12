@@ -42,6 +42,10 @@ void Player::openInventory() {
 	
 }
 
+void Player::useItem()
+{
+}
+
 
 int Player::getHealth()
 {

@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+using namespace std;
 
 class item;
 class Player {
@@ -10,16 +11,14 @@ private:
     int Health;
     int maxHP;
     int Attack;
-    int Gold;
     int Exp;
 
 
 public:
     Player();
-    Player(std::string nickname, int level, int health, int attack, int gold, int exp, int maxHP);
+    Player(std::string nickname, int level, int health, int attack, int exp, int maxHP);
 
     void levelUp();
-    void printPlayerStatus() const;
     void takeDamage(int Damage);
     void openInventory();
     void useItem();
@@ -29,7 +28,6 @@ public:
     int getmaxHP();
     int getHealth();
     int getAttack();
-    int getGold();
     static Player& getinstance();
     string getName();
     string setName(string nickname);

@@ -4,16 +4,6 @@
 #include <iostream>
 #include <vector>
 
-/*
-std::vector<std::weak_ptr<Item>> items_;
-int Bag_size = 10;
-int CurrentBag_size = 0;
-
-if(Bag_size > CurrentBag_size)
-{
-	
-}
-*/
 
 Bag::Bag(Player* owner)
 {

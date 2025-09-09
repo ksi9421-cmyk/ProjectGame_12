@@ -34,4 +34,6 @@ public:
 
     string getName();
     string setName(const string& nickname);
+
+
 };

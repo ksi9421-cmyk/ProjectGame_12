@@ -12,6 +12,7 @@ class Bag
 private:
     Player* Owner;
     std::vector<std::weak_ptr<Item>> items_;
+    
 public:
     Bag(Player* owner);
     ~Bag()

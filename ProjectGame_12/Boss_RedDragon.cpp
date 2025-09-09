@@ -39,9 +39,9 @@ void Boss_RedDragon::roar()
 
 void Boss_RedDragon::takeDamage(Player* p)
 {
-	if (health > p->getattack())
+	if (health > p->getAttack())
 	{
-		health -= p->getattack();
+		health -= p->getAttack();
 	}
 	else
 	{

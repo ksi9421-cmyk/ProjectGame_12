@@ -23,7 +23,7 @@ void GameManager::GameStart()
 	player.lock()->setName(nickname);
 
 	cout << player.lock()->getName() << "으로 설정되었습니다!\n";
-//	cout << "HP : " << Player::getinstance().getHp() << "공격력 : " << player.getattack() << endl;
+	//cout << "HP : " << Player::getinstance().getHp() << "공격력 : " << player.getAttack() << endl;
 }
 
 int GameManager::Round = 1;

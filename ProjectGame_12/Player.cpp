@@ -41,8 +41,9 @@ void Player::openInventory()
 
 void Player::useItem()
 {
+	int index;
 	bag->printInfo();
-	bag->useAt();
+	bag->useAt(index);
 }
 
 void Player::heal(int amount)

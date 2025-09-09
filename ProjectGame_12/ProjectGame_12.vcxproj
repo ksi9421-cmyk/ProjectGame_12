@@ -123,9 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="ProjectGame_12.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h" />

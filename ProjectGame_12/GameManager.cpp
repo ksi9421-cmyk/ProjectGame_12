@@ -152,7 +152,7 @@ void GameManager::BossRound()
 
 		while (1)
 		{
-			if (Boss.getHealth() >= 0)
+			if (Boss.getHealth() > 0)
 			{
 				cout << "======My Turn======\n";
 				cout << "선택해주세요 : \n";
@@ -227,7 +227,6 @@ void GameManager::BossRound()
 		}
 	}
 }
-
 
 
 int GameManager::GameOver()

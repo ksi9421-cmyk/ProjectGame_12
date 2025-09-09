@@ -17,5 +17,4 @@ public :
 	void BossBttle();
 	int GameOver();
 	static int getRound() { return Round; }
-	static void setRound(int round) { Round = round; }
 };

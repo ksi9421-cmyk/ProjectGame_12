@@ -154,7 +154,7 @@ void GameManager::MonsterBattle()
 	{
 	 cout << monster->getName() << "에게 당했다...\n";
 	 GameOver();
-	}*/*/
+	}*/
 }
 
 void GameManager::BossBttle()

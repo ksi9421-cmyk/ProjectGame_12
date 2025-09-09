@@ -14,6 +14,7 @@ private:
 
 
 public:
+    Player();
     Player(std::string nickname, int level, int health, int attack, int gold, int exp);
 
     void levelUp();
@@ -26,5 +27,7 @@ public:
     int getHealth();
     int getAttack();
     int getGold();
-
+    static Player& getinstance();
+    string getName();
+    string setName(string nickname);
 };

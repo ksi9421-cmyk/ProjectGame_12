@@ -19,11 +19,6 @@ void GameManager::GameStart()
 
 int GameManager::Round = 1;
 
-int GameManager::getRound()
-{
-	return Round;
-}
-
 void GameManager::NewRound()
 {
 	GameManager::getRound();
@@ -43,10 +38,10 @@ void GameManager::NewRound()
 		monster->roar();
 		cout << "Monster HP : " << monster->getHealth() << "Monster Attack : " << monster->getAttack() << endl;
 	}
-	GameManager::Round += 1;
+	Round++;
 }
 
-void GameManager::PlayerTrun()
+void GameManager::MonsterBattle()
 {
 	int TrunChoice = 0;
 	int InvenChoice = 0;
@@ -116,15 +111,11 @@ void GameManager::PlayerTrun()
 			}
 		}
 	}
-}
-
-void GameManager::PlayerMonsterAttack()
-{
 	/*auto monster = MonsterFactory::CreateRandomMonster();
 
 	cout << PlayerName << "이(가)" << monster->getName() << "을(를) 공격했다!!\n";
-	monster->getHealth() -= playerAttack;
-	cout << playerAttack << "만큼 데미지를 입혔다!!\n";
+	Player->TakeDamage();
+	cout << Player.Attack << "만큼 데미지를 입혔다!!\n";
 
 	while (1)
 	{
@@ -155,14 +146,23 @@ void GameManager::PlayerMonsterAttack()
 			break;
 		}
 	}*/
+	
+	/*cout << monster->getName() << "이(가)" << Playername << "을(를) 공격했다!!\n";
+	Monster->takeDamage(Player* p)
+	cout << monster->getAttack() << "만큼 데미지를 입혔다!!\n";
+	if (Player.hp <= 0)
+	{
+	 cout << monster->getName() << "에게 당했다...\n";
+	 GameOver();
+	}*/*/
 }
 
-void GameManager::PlayerBossAttack()
+void GameManager::BossBttle()
 {
 	/*Boss_RedDragon Boss;
 
 	cout << PlayerName << "이(가)" << Boss.getName() << "을(를) 공격했다!!\n";
-	Boss.getHealth() -= playerAttack;
+	Player.takeDamage();
 	cout << playerAttack << "만큼 데미지를 입혔다!!\n";
 
 	while (1)
@@ -176,28 +176,10 @@ void GameManager::PlayerBossAttack()
 			PlayerTrun();
 			break;
 		}
-	}*/
-}
+	}
 
-void GameManager::MonsterAttack()
-{
-	/*auto monster = MonsterFactory::CreateRandomMonster();
-
-	cout << monster->getName() << "이(가)" << Playername << "을(를) 공격했다!!\n";
-	Player.HP -= monster->getAttack();
-	cout << monster->getAttack() << "만큼 데미지를 입혔다!!\n";
-	if (Player.hp <= 0)
-	{
-	 cout << monster->getName() << "에게 당했다...\n";
-	 GameOver();
-	}*/
-}
-
-void GameManager::BossAttack()
-{
-	/*Boss_RedDragon Boss;
 	cout << Boss.getName() << "이(가)" << Player.name << "을(를) 공격했다!!\n";
-	Player.hp -= Boss.getAttack();
+	Boss.takeDamage(Player* p)
 	cout << Boss.getAttack() << "만큼 데미지를 입혔다!!\n";
 
 	if (Player.hp <= 0)
@@ -206,6 +188,8 @@ void GameManager::BossAttack()
 	 GameOver();
 	}*/
 }
+
+
 
 int GameManager::GameOver()
 {

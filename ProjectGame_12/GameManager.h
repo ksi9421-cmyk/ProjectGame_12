@@ -13,11 +13,9 @@ private:
 public : 
 	void GameStart();
 	void NewRound();
-	void PlayerTrun();
-	void PlayerMonsterAttack();
-	void PlayerBossAttack();
-	void MonsterAttack();
-	void BossAttack();
+	void MonsterBattle();
+	void BossBttle();
 	int GameOver();
-	int getRound();
+	static int getRound() { return Round; }
+	static void setRound(int round) { Round = round; }
 };

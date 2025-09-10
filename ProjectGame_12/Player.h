@@ -37,4 +37,6 @@ public:
     void setName(const string& nickname);
     int getExp();
     void setExp();
+    Bag* getBag() const;
+   
 };

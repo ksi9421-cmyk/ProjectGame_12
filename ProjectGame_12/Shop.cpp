@@ -7,10 +7,10 @@ using namespace std;
 
 Shop::Shop()
 {
-    Itemlist.push_back({ "고정 체력포션",10 }); // 상점에서 판매 리스트
-    Itemlist.push_back({ "50%회복 체력포션",20 });
-    Itemlist.push_back({ "탑 관리자의 검",80 });
-    Itemlist.push_back({ "탑 관리자의 갑옷",80 });
+    Itemlist.push_back({ "HP 50 증가 물약",10 }); // 상점에서 판매 리스트
+    Itemlist.push_back({ "HP 50% 증가 물약",20 });
+    Itemlist.push_back({ "공격력 증가 물약",80 });
+    Itemlist.push_back({ "최대체력 증가 물약",80 });
 }
 
 void Shop::buyItem(Gold& playerGold)

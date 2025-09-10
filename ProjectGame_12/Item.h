@@ -43,6 +43,11 @@ public:
 	{
 		return count;
 	}
+	int subcount(int inCount)
+	{
+		count -= inCount;
+		return count;
+	}
 
 	std::string  getName() const;
 	int getPrice() const;

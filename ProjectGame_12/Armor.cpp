@@ -16,5 +16,6 @@ void Armor::use(Player* target)
 {
 	HPBoost = static_cast<int>(target->getmaxHP() * (HPBoostRatio));
 	target->addmaxHP(HPBoost);
-	std::cout << "Å¾ °ü¸®ÀÚÀÇ °©¿Ê" << getName() << "at used max hp up" << HPBoost << "% up.\n";
+	subcount(1);
+	std::cout << "at used max hp up" << HPBoost << "% up.\n";
 }

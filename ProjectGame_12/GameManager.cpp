@@ -23,16 +23,17 @@ GameManager::GameManager() : player(make_shared<Player>()) , Round(1)
 
 void GameManager::GameStart()
 {
-	cout << "======TOP Monster======\n";
-	cout << "Ä³¸¯ÅÍ ÀÌ¸§ : ";
+	cout << "======TOP Monster======\n\n";
+	cout << "Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ : ";
 	
 	string nickname;
 	cin >> nickname;
 
 	player->setName(nickname);
 
-	cout << player->getName() << "À¸·Î ¼³Á¤µÇ¾ú½À´Ï´Ù!\n";
-	cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "°ø°Ý·Â : " << player->getAttack() << endl;
+	cout << player->getName() << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½!\n\n";
+	cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+	cout << "ï¿½ï¿½ï¿½Ý·ï¿½ : " << player->getAttack() << endl;
 }
 
 
@@ -45,39 +46,45 @@ void GameManager::MonsterRound()
 	int TrunChoice = 0;
 	int InvenChoice = 0;
 
-		cout << "======" << Round << "Ãþ Monster!!======\n";
-		cout << "*****Monster µîÀå!!*****\n";
+		cout << "======" << Round << "ï¿½ï¿½ Monster!!======\n\n";
+		cout << "*****Monster ï¿½ï¿½ï¿½ï¿½!!*****\n\n";
 		monster->roar();
-		cout << "Monster HP : " << monster->getHealth() << "Monster Attack : " << monster->getAttack() << endl;
+		cout << "Monster HP : " << monster->getHealth() << " / Monster Attack : " << monster->getAttack() << endl;
 
 		while (player->getHealth() >0 && monster->getHealth() >0)
 		{
 			if (monster->getHealth() > 0)
 			{
 				MAKE_CHOICE1:
-				cout << "======My Turn======\n";
-				cout << "¼±ÅÃÇØÁÖ¼¼¿ä : \n";
-				cout << "1. °ø°ÝÇÏ±â\n";
-				cout << "2. ÀÎº¥Åä¸® ¿­±â\n";
+				cout << "======My Turn======\n\n";
+				cout << "1. ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½\n";
+				cout << "2. ï¿½Îºï¿½ï¿½ä¸® ï¿½ï¿½ï¿½ï¿½\n";
+				cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½ : ";
 				cin >> TrunChoice;
 
 				switch (TrunChoice)
 				{
 				case 1:
-					cout << player->getName() << "ÀÌ(°¡)" << monster->getName() << "À»(¸¦) °ø°ÝÇß½À´Ï´Ù!!\n";
-					 monster->takeDamage(player->getAttack());
-					cout << player->getAttack() << "¸¸Å­ µ¥¹ÌÁö¸¦ ÀÔÇû½À´Ï´Ù!!\n";
+					cout << "======My Attack======\n\n";
+					cout << player->getName() << "ï¿½ï¿½(ï¿½ï¿½)" << monster->getName() << "ï¿½ï¿½(ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½!!\n\n";
+					cout << player->getAttack() << "ï¿½ï¿½Å­ ï¿½ï¿½ï¿½ï¿½ ï¿½ß½ï¿½ï¿½Ï´ï¿½!!\n\n";
+					monster->takeDamage(player->getAttack());
+					cout << "========================\n\n";
+					cout << "Monster HP : " << monster->getHealth() << " / Monster Attack : " << monster->getAttack() << endl;
 					break;
 
 				case 2:
 				MAKE_CHOICE2:
 
 					player->openInventory();
-					cout << "¾î¶² ¾ÆÀÌÅÛÀ» »ç¿ëÇÏ½Ã°Ú½À´Ï±î? : \n";
-					cout << "1. Hp¹°¾à\n";
-					cout << "2. 50%¹°¾à\n";
-					cout << "3. µ¹¾Æ°¡±â\n";
-					cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "°ø°Ý·Â : " << player->getAttack() << endl;
+					cout << "======Use Item======\n\n";
+					cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+					cout << "ï¿½ï¿½ï¿½Ý·ï¿½ : " << player->getAttack() << endl;
+					cout << "========================\n\n";
+					cout << "1. Hpï¿½ï¿½ï¿½ï¿½\n\n";
+					cout << "2. 50%ï¿½ï¿½ï¿½ï¿½\n\n";
+					cout << "3. ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½\n\n";
+					cout << "ï¿½î¶² ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï½Ã°Ú½ï¿½ï¿½Ï±ï¿½? : ";
 					cin >> InvenChoice;
 
 					switch (InvenChoice)
@@ -85,12 +92,15 @@ void GameManager::MonsterRound()
 					case 1:
 						if (player->useItem(EItemType::HealAmount))
 						{
-							cout << "HP°¡ Áõ°¡µÇ¾ú½À´Ï´Ù!\n";
-							cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "°ø°Ý·Â : " << player->getAttack() << endl;
+							cout << "======Hp 100 Potion Use======\n\n";
+							cout << "HPï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½!\n\n";
+							cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+							cout << "ï¿½ï¿½ï¿½Ý·ï¿½ : " << player->getAttack() << endl;
 						}
 						else
 						{
-							cout << "HP ¹°¾àÀÌ ºÎÁ·ÇÕ´Ï´Ù.\n";
+							cout << "========================\n\n";
+							cout << "HP ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.\n\n";
 							goto MAKE_CHOICE2;
 						}
 						break;
@@ -99,29 +109,35 @@ void GameManager::MonsterRound()
 					case 2:
 						if (player->useItem(EItemType::HealRatio))
 					    {
-							cout << "Hp°¡ 50% Áõ°¡µÇ¾ú½À´Ï´Ù!\n";
-							cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "°ø°Ý·Â : " << player->getAttack() << endl;
+							cout << "======Hp 50% Potion Use======\n\n";
+							cout << "Hpï¿½ï¿½ 50% ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½!\n\n";
+							cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+							cout << "ï¿½ï¿½ï¿½Ý·ï¿½ : " << player->getAttack() << endl;
 						}
 						else
 						{
-					    	cout << "Hp°¡ 50% ¹°¾àÀÌ ºÎÁ·ÇÕ´Ï´Ù.\n";
+							cout << "========================\n\n";
+					    	cout << "Hpï¿½ï¿½ 50% ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.\n\n";
 							goto MAKE_CHOICE2;
 						}
 						break;
 						
-
 					case 3:
-						cout << "µ¹¾Æ°©´Ï´Ù";
+						cout << "========================\n\n";
+						cout << "ï¿½ï¿½ï¿½Æ°ï¿½ï¿½Ï´ï¿½\n\n";
 						goto MAKE_CHOICE1;
-						
 					}
 					break;
 				}
 				if (monster->getHealth() > 0)
 				{
-					cout << monster->getName() << "ÀÌ(°¡)" << player->getName() << "À»(¸¦) °ø°ÝÇß½À´Ï´Ù!!\n";
+					cout << "======Monster Trun======\n\n";
+					cout << monster->getName() << "ï¿½ï¿½(ï¿½ï¿½)" << player->getName() << "ï¿½ï¿½(ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½!!\n\n";
+					cout << monster->getAttack() << "ï¿½ï¿½Å­ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½!!\n\n";
 					player->takeDamage(monster->getAttack());
-					cout << monster->getAttack() << "¸¸Å­ µ¥¹ÌÁö¸¦ ÀÔÇû½À´Ï´Ù!!\n";
+					cout << "========================\n\n";
+					cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+					cout << "ï¿½ï¿½ï¿½Ý·ï¿½ : " << player->getAttack() << endl;
 				}
 				else
 				{
@@ -132,10 +148,11 @@ void GameManager::MonsterRound()
 		if (monster->getHealth() <= 0)
 		{
 			player->levelUp();
+			//ï¿½ï¿½ï¿½ï¿½ item, ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ exp
 		}
 		else if (player->getHealth() <= 0)
 		{
-			cout << monster->getName() << "¿¡°Ô ´çÇß½À´Ï´Ù...\n";
+			cout << monster->getName() << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½...\n\n";
 			GameOver();
 		}
 		Round++;
@@ -144,9 +161,10 @@ void GameManager::MonsterRound()
 void GameManager::VisitShop()
 {
 	int NextChoice = 0;
-	cout << "´ÙÀ½ ÃþÀ¸·Î ³Ñ¾î°¡½Ã°Ú½À´Ï±î? : \n";
-	cout << "1. ´ÙÀ½ Ãþ\n";
-	cout << "2. »óÁ¡\n";
+	cout << "======Next Floor or VisitShop======\n\n";
+	cout << "1. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½\n\n";
+	cout << "2. ï¿½ï¿½ï¿½ï¿½\n\n";
+	cout << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¾î°¡ï¿½Ã°Ú½ï¿½ï¿½Ï±ï¿½? : ";
 	cin >> NextChoice;
 		
 	switch (NextChoice)
@@ -169,37 +187,45 @@ void GameManager::BossRound()
 
 	if (Round == 10)
 	{
-		cout << "======" << Round << "Ãþ Monster!!======\n";
-		cout << "*****B.O.S.S!!!*****\n";
+		cout << "======" << Round << "ï¿½ï¿½ Monster!!======\n\n";
+		cout << "*****B.O.S.S!!!*****\n\n";
 		Boss_RedDragon Boss;
 		Boss.roar();
-		cout << "Boss HP : " << Boss.getHealth() << "Boss Attack : " << Boss.getAttack() << endl;
+		cout << "Boss HP : " << Boss.getHealth() << " / Boss Attack : " << Boss.getAttack() << endl;
 
 		while (1)
 		{
 			if (Boss.getHealth() > 0)
 			{
-				cout << "======My Turn======\n";
-				cout << "¼±ÅÃÇØÁÖ¼¼¿ä : \n";
-				cout << "1. °ø°ÝÇÏ±â\n";
-				cout << "2. ÀÎº¥Åä¸® ¿­±â\n";
+			MAKE_CHOICE1:
+				cout << "======My Turn======\n\n";
+				cout << "1. ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½\n\n";
+				cout << "2. ï¿½Îºï¿½ï¿½ä¸® ï¿½ï¿½ï¿½ï¿½\n\n";
+				cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½ : ";
 				cin >> TrunChoice;
 
 				switch (TrunChoice)
 				{
 				case 1:
-					cout << player->getName() << "ÀÌ(°¡)" << Boss.getName() << "À»(¸¦) °ø°ÝÇß½À´Ï´Ù!!\n";
+					cout << "======My Attack======\n\n";
+					cout << player->getName() << "ï¿½ï¿½(ï¿½ï¿½)" << Boss.getName() << "ï¿½ï¿½(ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½!!\n\n";
+					cout << player->getAttack() << "ï¿½ï¿½Å­ ï¿½ï¿½ï¿½ï¿½ ï¿½ß½ï¿½ï¿½Ï´ï¿½!!\n\n";
 					Boss.takeDamage(player->getAttack());
-					cout << player->getAttack() << "¸¸Å­ µ¥¹ÌÁö¸¦ ÀÔÇû½À´Ï´Ù!!\n";
+					cout << "========================\n\n";
+					cout << "Boss HP : " << Boss.getHealth() << " / Boss Attack : " << Boss.getAttack() << endl;
 					break;
 
 				case 2:
+				MAKE_CHOICE2:
+					cout << "======Use Item======\n\n";
 					player->openInventory();
-					cout << "¾î¶² ¾ÆÀÌÅÛÀ» »ç¿ëÇÏ½Ã°Ú½À´Ï±î? : \n";
-					cout << "1. Hp¹°¾à\n";
-					cout << "2. Attack¹°¾à\n";
-					cout << "3. µ¹¾Æ°¡±â\n";
-					cout << "HP : " << player->getHealth() << "Attack : " << player->getAttack() << endl;
+					cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+					cout << "ï¿½ï¿½ï¿½Ý·ï¿½ : " << player->getAttack() << endl;
+					cout << "========================\n\n";
+					cout << "1. Hpï¿½ï¿½ï¿½ï¿½\n\n";
+					cout << "2. Attackï¿½ï¿½ï¿½ï¿½\n\n";
+					cout << "3. ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½\n\n";
+					cout << "ï¿½î¶² ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï½Ã°Ú½ï¿½ï¿½Ï±ï¿½? : ";
 					cin >> InvenChoice;
 
 					switch (InvenChoice)
@@ -207,45 +233,55 @@ void GameManager::BossRound()
 					case 1:
 						if (player->useItem(EItemType::HealAmount))
 						{
-							cout << "HP°¡ Áõ°¡µÇ¾ú½À´Ï´Ù!\n";
-							cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "°ø°Ý·Â : " << player->getAttack() << endl;
+							cout << "======Hp 100 Potion Use======\n\n";
+							cout << "HPï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½!\n\n";
+							cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+							cout << "ï¿½ï¿½ï¿½Ý·ï¿½ : " << player->getAttack() << endl;
 						}
 						else
 						{
-							cout << "HP ¹°¾àÀÌ ºÎÁ·ÇÕ´Ï´Ù.\n";
+							cout << "HP ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.\n\n";
+							goto MAKE_CHOICE2;
 						}
 						break;
 
 					case 2:
 						if (player->useItem(EItemType::HealRatio))
 						{
-							cout << "Hp°¡ 50% Áõ°¡µÇ¾ú½À´Ï´Ù!\n";
-							cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "°ø°Ý·Â : " << player->getAttack() << endl;
+							cout << "======Hp 50%Potion Use======\n\n";
+							cout << "Hpï¿½ï¿½ 50% ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½!\n\n";
+							cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+							cout << "ï¿½ï¿½ï¿½Ý·ï¿½ : " << player->getAttack() << endl;
 						}
 						else
 						{
-							cout << "Hp°¡ 50% ¹°¾àÀÌ ºÎÁ·ÇÕ´Ï´Ù.";
+							cout << "Hpï¿½ï¿½ 50% ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.";
+							goto MAKE_CHOICE2;
 						}
 						break;
 
 					case 3:
-						cout << "µ¹¾Æ°©´Ï´Ù";
-						break;
+						cout << "ï¿½ï¿½ï¿½Æ°ï¿½ï¿½Ï´ï¿½";
+						goto MAKE_CHOICE1;
 					}
 					break;
 				}
-				cout << Boss.getName() << "ÀÌ(°¡)" << player->getName() << "À»(¸¦) °ø°ÝÇß½À´Ï´Ù!!\n";
+				cout << "======Boss Trun======\n\n";
+				cout << Boss.getName() << "ï¿½ï¿½(ï¿½ï¿½)" << player->getName() << "ï¿½ï¿½(ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½!!\n\n";
+				cout << Boss.getAttack() << "ï¿½ï¿½Å­ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½!!\n\n";
 				player->takeDamage(Boss.getAttack());
-				cout << Boss.getAttack() << "¸¸Å­ µ¥¹ÌÁö¸¦ ÀÔÇû½À´Ï´Ù!!\n";
+				cout << "========================\n\n";
+				cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+				cout << "ï¿½ï¿½ï¿½Ý·ï¿½ : " << player->getAttack() << endl;
 			}
 			else if (Boss.getHealth() <= 0)
 			{
-				cout << Boss.getName() << "À»(¸¦) Ã³Ä¡Çß½À´Ï´Ù!!\n";
-				GameOver();
+				cout << Boss.getName() << "ï¿½ï¿½(ï¿½ï¿½) Ã³Ä¡ï¿½ß½ï¿½ï¿½Ï´ï¿½!!\n\n";
+				GameWin();
 			}
 			else if (player->getHealth() <= 0)
 			{
-				cout << Boss.getName() << "¿¡°Ô ´çÇß½À´Ï´Ù...\n";
+				cout << Boss.getName() << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½...\n\n";
 				GameOver();
 			}
 		}
@@ -255,6 +291,12 @@ void GameManager::BossRound()
 
 void GameManager::GameOver()
 {
-	cout << "°ÔÀÓ¿¡¼­ ÆÐ¹èÇÏ¿´½À´Ï´Ù\n";
+	cout << "ï¿½ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½ ï¿½Ð¹ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½\n\n";
+	return exit(0);
+}
+
+void GameManager::GameWin()
+{
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Â¸ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½\n\n";
 	return exit(0);
 }

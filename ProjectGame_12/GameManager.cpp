@@ -6,6 +6,7 @@
 #include "Shop.h"
 #include "Gold.h"
 #include <cstdlib>
+#include <windows.h>
 
 using namespace std;
 
@@ -30,6 +31,11 @@ void GameManager::GameStart()
 	cin >> nickname;
 
 	player->setName(nickname);
+
+	system("cls");
+	cout << "로딩중....." << endl;
+	Sleep(2000);
+	system("cls");
 
 	cout << player->getName() << "으로 설정되었습니다!\n\n";
 	cout << "HP / 최대HP : " << player->getHealth() << " / " << player->getmaxHP() << endl;

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Gold::Gold() : amount(200) {}  //기본 돈 0원
+Gold::Gold() : amount(0) {}  //기본 돈 0원
 
 Gold::Gold(int startAmount) : amount(startAmount) {} // 원하는 시작 금액으로 초기화
 

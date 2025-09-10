@@ -136,7 +136,8 @@ void GameManager::VisitShop()
 
 	case 2:
 		Shop shop;
-		shop.buyItem();
+		Gold gold;
+		shop.buyItem(gold);
 		break;
 	}
 }

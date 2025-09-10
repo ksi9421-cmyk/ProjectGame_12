@@ -20,7 +20,7 @@ public:
     Bag(Player* owner);
     ~Bag();
 public:
-    Item* Dropitem();
+    void TakeRandomItem();
     void printInfo() const;
 
 public:
@@ -33,7 +33,7 @@ public:
     {
         if (GetSize() == 0)
         {
-            std::cout << "°¡¹æÀÌ ºñ¾îÀÖ½À´Ï´Ù." << std::endl;
+            std::cout << "ê°€ë°©ì´ ë¹„ì–´ìžˆìŠµë‹ˆë‹¤." << std::endl;
             
         }
     }

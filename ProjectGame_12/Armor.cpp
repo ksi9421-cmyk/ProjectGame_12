@@ -7,7 +7,8 @@
 #include <iostream>
 
 Armor::Armor(std::string name, int price, std::string info, float HPBoostRatio, int count)
-	: Item(std::move(name), price, std::move(info), count), HPBoost(0), HPBoostRatio(HPBoostRatio) {
+	: Item(name, price, info, count), HPBoost(0), HPBoostRatio(HPBoostRatio)
+{
 }
 Armor::~Armor() = default;
 

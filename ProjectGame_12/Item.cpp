@@ -9,11 +9,11 @@
 
 using namespace std;
 
-Item::Item(std::string name, int price, std::string info, int inCount) : name(std::move(name)), price(price), info(std::move(info)), count(inCount)
+Item::Item(std::string name, int price, std::string info, int inCount) : name(name), price(price), info(info), count(inCount)
 {
 }
 
-const std::string Item::getName() const
+std::string Item::getName() const
 {
 	return name;
 }

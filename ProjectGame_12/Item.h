@@ -23,6 +23,11 @@ private:
 	int count;
 
 public:
+	Item()
+	{
+		price = 0;
+		count = 0;
+	}
 	Item(std::string name, int price, std::string info,int count);
 	virtual ~Item() = default;
 
@@ -31,28 +36,29 @@ public:
 
 	void addCount(int inCount)
 	{
-		count = inCount;
+		count += inCount;
 	}
 
 	int getCount() const
 	{
 		return count;
 	}
-	virtual std::string  getName() const;
+
+	std::string  getName() const;
 	int getPrice() const;
 	const std::string& getinfo() const;
-	virtual void printInfo() const {
-				std::cout << "[" << getName() << "] 가격:" << getPrice()
-					<< " 설명:" << getinfo() << "\n";
+	void printInfo() const
+	{
+		std::cout << "[" << getName() << "] 가격:" << getPrice() << " 설명:" << getinfo() << "\n";
 	}
 };
 
 class Weapon : public Item
 {
 public:
-	int damage;
+	float damage;
+	Weapon(std::string name, int price, std::string info, float damage, int count);
 	~Weapon();
-	Weapon(std::string name, int price, std::string info, float damage, int count);;
 
 	EItemType GetType() override {
 		return EItemType::EWeapon;

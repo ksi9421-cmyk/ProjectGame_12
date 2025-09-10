@@ -13,14 +13,14 @@ Shop::Shop()
     Itemlist.push_back({ "탑 관리자의 갑옷",80 });
 }
 
-void Shop::buyItem()
+void Shop::buyItem(Gold& playerGold)
 {
     int index; // 템 번호
 
     while (true) // 템 사거나 잘못된 번호 입력하면 끝나서 while문 사용
     {
         // 맨 위에 플레이어 골드 출력 (항상 한 줄만)
-        cout << "\n플레이어 현재 골드: " << Gold::getinstance().getAmount()  << " Gold" << endl;
+        cout << "\n플레이어 현재 골드: " << playerGold.getAmount() << " Gold" << endl;
 
         // 상점 목록 출력
         cout << "===== 탑의 상점 =====" << endl;
@@ -49,10 +49,10 @@ void Shop::buyItem()
 
         ShopItem selectItem = Itemlist[index - 1]; // 0부터 시작하니까 -1 해줘서 1부터 시작하게 해줌
 
-        if (Gold::getinstance().spend(selectItem.price))
+        if (playerGold.spend(selectItem.price))
         {
             cout << selectItem.name << "을 구매하셨습니다." << endl;
-            Gold::getinstance().add();
+            playerGold.add();
         }
         else
         {

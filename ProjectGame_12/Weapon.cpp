@@ -7,10 +7,13 @@
 #include <vector>
 
 Weapon::Weapon(std::string name, int price, std::string info, float damage, int count)
-	:Item(std::move(name), price, std::move(info), count), damage(damage) {
+	:Item(name, price, info, count), damage(damage) {
 }
 
-Weapon::~Weapon() = default;
+Weapon::~Weapon()
+{
+
+}
 
 void Weapon::use(Player* target) {
 	int bonus = static_cast<int>(target->getAttack() * damage);

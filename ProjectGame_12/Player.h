@@ -25,7 +25,7 @@ public:
     void levelUp();
     void takeDamage(int Damage);
     void openInventory();
-    void useItem(int index);
+    bool useItem(EItemType ItemType);
     void heal(int amount);
     void powerUp(int amount);
     void addmaxHP(int amount);

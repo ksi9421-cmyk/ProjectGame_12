@@ -55,7 +55,6 @@ void GameManager::MonsterRound()
 
 				switch (TrunChoice)
 				{
-
 				case 1:
 					cout << player.lock()->getName() << "이(가)" << monster->getName() << "을(를) 공격했다!!\n";
 					//monster->getHealth() -= Player::getinstance().getAttack();
@@ -74,23 +73,21 @@ void GameManager::MonsterRound()
 					switch (InvenChoice)
 					{
 					case 1:
-						/*
-						if (inventory.hppotion > 0)
+						if (player.lock()->useItem(EItemType::HealAmount))
 						{
-							PlayerHp += HPpotion;
 							cout << "HP가 증가되었습니다!\n";
-							cout << "HP : " << PlayerHp << "Attack : " << PlayerAttack << endl;
+//							cout << "HP : " << PlayerHp << "Attack : " << PlayerAttack << endl;
 						}
 						else
 						{
-							cout << "HP 물약이 부족합니다.\n"
+							cout << "HP 물약이 부족합니다.\n";
 						}
-						*/
 						break;
 
 					case 2:
-						//if (inventory.Attackpotion > 0)
-						//{
+						player.lock()->useItem(EItemType::HealRatio);
+//						if (inventory.Attackpotion > 0)
+// 					    {
 							//PlayerAttack += Attackpotion;
 							//cout << "Attack이 증가되었습니다!\n";
 							//cout << "HP : " << PlayerHp << "Attack : " << PlayerAttack << endl;

@@ -39,10 +39,9 @@ void Player::openInventory()
 	bag->printInfo();
 }
 
-void Player::useItem(int index)
+bool Player::useItem(EItemType ItemType)
 {
-	bag->printInfo();
-	bag->useAt(index);
+	return bag->useItem(ItemType);
 }
 
 void Player::heal(int amount)

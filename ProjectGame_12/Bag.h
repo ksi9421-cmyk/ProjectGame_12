@@ -3,33 +3,30 @@
 #include "Item.h"
 #include <string>
 #include <iostream>
+#include <unordered_map>
 
 class Player;
 
 class Bag
 {
+public:
+
 private:
     Player* Owner;
-    std::vector<std::weak_ptr<Item>> items_;
+    std::unordered_map<EItemType, std::weak_ptr<Item>> items_;
 
 public:
+
     Bag(Player* owner);
     ~Bag();
 public:
-    virtual void printInfo() const;
+    void printInfo() const;
 
 public:
-    void addItem(const std::shared_ptr<Item>& item)
-    {
-        items_.push_back(item);
-    }
-    void RemoveLastItem()
-    {
-        items_.pop_back();
-    }
+    void addItem(EItemType ItemType, int count);
     int GetSize() const
     {
-        return items_.size();
+        return (int)items_.size();
     }
     void PrintAllItems() const
     {
@@ -39,5 +36,5 @@ public:
             
         }
     }
-    void useAt(int index);
+    bool useItem(EItemType ItemType);
 };

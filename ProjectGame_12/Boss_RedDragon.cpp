@@ -37,11 +37,11 @@ void Boss_RedDragon::roar()
 	cout << "Red Dragon appeared!" << endl;
 }
 
-void Boss_RedDragon::takeDamage(Player* p)
+void Boss_RedDragon::takeDamage(int damage)
 {
-	if (health > p->getAttack())
+	if (health > damage)
 	{
-		health -= p->getAttack();
+		health -= damage;
 	}
 	else
 	{

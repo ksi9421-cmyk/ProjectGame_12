@@ -38,11 +38,11 @@ void Lizardman::roar()
 }
 
 
-void Lizardman::takeDamage(Player* p)
+void Lizardman::takeDamage(int damage)
 {
-	if (health > p->getAttack())                      
+	if (health > damage)                      
 	{ 
-		health -= p->getAttack(); 
+		health -= damage; 
 	}
 	else 
 	{ 

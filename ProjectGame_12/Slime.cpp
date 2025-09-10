@@ -37,11 +37,11 @@ void Slime::roar()
 	cout << "Slime appeared!" << endl;
 }
 
-void Slime::takeDamage(Player* p)
+void Slime::takeDamage(int damage)
 {
-	if (health > p->getAttack())
+	if (health > damage)
 	{
-		health -= p->getAttack();
+		health -= damage;
 	}
 	else
 	{

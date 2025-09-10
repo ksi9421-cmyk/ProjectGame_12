@@ -16,6 +16,6 @@ public:
 	int getHealth();
 	int getAttack();
 	void roar();
-	void takeDamage(Player* p);
+	void takeDamage(int damage);
 };
 

@@ -11,7 +11,7 @@ Slime::Slime()
 	health = distHealth(gen);
 
 
-	uniform_int_distribution<int> distAttack(level * 10, level * 20);
+	uniform_int_distribution<int> distAttack(level * 10, level * 15);
 	attack = distAttack(gen);
 
 	name = "Slime";

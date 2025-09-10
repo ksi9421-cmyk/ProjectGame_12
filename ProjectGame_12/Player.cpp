@@ -46,6 +46,11 @@ bool Player::useItem(EItemType ItemType)
 void Player::heal(int amount)
 {
 	Health += amount;
+	if (Health > maxHP)
+	{
+		Health = maxHP;
+	}
+		
 }
 
 void Player::powerUp(int amount)

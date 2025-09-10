@@ -11,7 +11,7 @@ Boss_RedDragon::Boss_RedDragon()
 	health = distHealth(gen);
 
 
-	uniform_int_distribution<int> distAttack(level * 15, level * 30);
+	uniform_int_distribution<int> distAttack(level * 15, level * 20);
 	attack = distAttack(gen);
 
 	name = "Red Dragon";

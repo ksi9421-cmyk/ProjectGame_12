@@ -55,7 +55,6 @@ void GameManager::MonsterRound()
 
 				switch (TrunChoice)
 				{
-
 				case 1:
 					cout << player.lock()->getName() << "이(가)" << monster->getName() << "을(를) 공격했다!!\n";
 					//monster->getHealth() -= Player::getinstance().getAttack();
@@ -74,21 +73,21 @@ void GameManager::MonsterRound()
 					switch (InvenChoice)
 					{
 					case 1:
-						if (inventory.hppotion > 0)
+						if (player.lock()->useItem(EItemType::HealAmount))
 						{
-							PlayerHp += HPpotion;
 							cout << "HP가 증가되었습니다!\n";
-							cout << "HP : " << PlayerHp << "Attack : " << PlayerAttack << endl;
+//							cout << "HP : " << PlayerHp << "Attack : " << PlayerAttack << endl;
 						}
 						else
 						{
-							cout << "HP 물약이 부족합니다.\n"
+							cout << "HP 물약이 부족합니다.\n";
 						}
 						break;
 
 					case 2:
-						//if (inventory.Attackpotion > 0)
-						//{
+						player.lock()->useItem(EItemType::HealRatio);
+//						if (inventory.Attackpotion > 0)
+// 					    {
 							//PlayerAttack += Attackpotion;
 							//cout << "Attack이 증가되었습니다!\n";
 							//cout << "HP : " << PlayerHp << "Attack : " << PlayerAttack << endl;
@@ -175,7 +174,7 @@ void GameManager::BossRound()
 				case 2:
 					player.lock()->openInventory();
 					cout << "어떤 아이템을 사용하시겠습니까? : \n";
-					cout << "1. Hp물약\n"
+					cout << "1. Hp물약\n";
 					cout << "2. Attack물약\n";
 					cout << "3. 돌아가기\n";
 					cout << "HP : " << player.lock()->getHealth() << "Attack : " << player.lock()->getAttack() << endl;
@@ -239,9 +238,3 @@ int GameManager::GameOver()
 	cout << "게임에서 패배하였습니다\n";
 	exit(0);
 }
-
-
-
-1p
-2
-3w

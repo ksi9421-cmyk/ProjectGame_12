@@ -126,7 +126,8 @@
     <ClCompile Include="Armor.cpp" />
     <ClCompile Include="Bag.cpp" />
     <ClCompile Include="Item.cpp" />
-    <ClCompile Include="Potion.cpp" />
+    <ClCompile Include="PotionHealAmount.cpp" />
+    <ClCompile Include="PotionHealRatio.cpp" />
     <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
   <ItemGroup>

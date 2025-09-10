@@ -3,7 +3,7 @@
 
 Goblin::Goblin()
 {
-	int level = GameManager::getRound();
+	int level = GameManager::getinstance().getRound();
 	random_device rd;
 	mt19937 gen(rd());
 
@@ -37,11 +37,11 @@ void Goblin::roar()
 	cout << "Goblin appeared!" << endl;
 }
 
-void Goblin::takeDamage(Player* p)
+void Goblin::takeDamage(int damage)
 {
-	if (health > p->getAttack())
+	if (health > damage)
 	{
-		health -= p->getAttack();
+		health -= damage;
 	}
 	else
 	{

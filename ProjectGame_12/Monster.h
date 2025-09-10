@@ -17,7 +17,7 @@ public:
 	virtual int getHealth() = 0;
 	virtual int getAttack() = 0;
 	virtual void roar() = 0;
-	virtual void takeDamage(Player* p) = 0; 
+	virtual void takeDamage(int damage) = 0; 
 
 	virtual ~Monster() {}
 };

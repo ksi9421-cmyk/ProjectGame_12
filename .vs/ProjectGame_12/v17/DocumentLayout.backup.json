@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\UnraelEngine\\ProjectGame_12\\ProjectGame_12\\GameManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\GameManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\UnraelEngine\\ProjectGame_12\\ProjectGame_12\\Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\UnraelEngine\\ProjectGame_12\\ProjectGame_12\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\UnraelEngine\\ProjectGame_12\\ProjectGame_12\\GameManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\GameManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,10 +36,49 @@
               "RelativeDocumentMoniker": "ProjectGame_12\\GameManager.cpp",
               "ToolTip": "C:\\UnraelEngine\\ProjectGame_12\\ProjectGame_12\\GameManager.cpp",
               "RelativeToolTip": "ProjectGame_12\\GameManager.cpp",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAAFEAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-09T03:46:32.622Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameManager.h",
+              "DocumentMoniker": "C:\\UnraelEngine\\ProjectGame_12\\ProjectGame_12\\GameManager.h",
+              "RelativeDocumentMoniker": "ProjectGame_12\\GameManager.h",
+              "ToolTip": "C:\\UnraelEngine\\ProjectGame_12\\ProjectGame_12\\GameManager.h",
+              "RelativeToolTip": "ProjectGame_12\\GameManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-10T05:50:47.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Shop.cpp",
+              "DocumentMoniker": "C:\\UnraelEngine\\ProjectGame_12\\ProjectGame_12\\Shop.cpp",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Shop.cpp",
+              "ToolTip": "C:\\UnraelEngine\\ProjectGame_12\\ProjectGame_12\\Shop.cpp",
+              "RelativeToolTip": "ProjectGame_12\\Shop.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-10T05:55:48.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Shop.h",
+              "DocumentMoniker": "C:\\UnraelEngine\\ProjectGame_12\\ProjectGame_12\\Shop.h",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Shop.h",
+              "ToolTip": "C:\\UnraelEngine\\ProjectGame_12\\ProjectGame_12\\Shop.h",
+              "RelativeToolTip": "ProjectGame_12\\Shop.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-10T05:55:36.771Z",
               "EditorCaption": ""
             },
             {

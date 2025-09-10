@@ -92,3 +92,7 @@ int Player::getExp()
 {
 	return Exp;
 }
+Bag* Player::getBag() const
+{
+	return bag.get();
+}

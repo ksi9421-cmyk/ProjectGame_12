@@ -82,7 +82,9 @@ void GameManager::MonsterRound()
 					cout << "========================\n\n";
 					cout << "1. Hp물약\n\n";
 					cout << "2. 50%물약\n\n";
-					cout << "3. 돌아가기\n\n";
+					cout << "3. 공격력증가물약\n\n";
+					cout << "4. 최대체력증가물약\n\n";
+					cout << "5. 돌아가기\n\n";
 					cout << "어떤 아이템을 사용하시겠습니까? : ";
 					cin >> InvenChoice;
 
@@ -121,6 +123,37 @@ void GameManager::MonsterRound()
 						break;
 						
 					case 3:
+						if (player->useItem(EItemType::EWeapon))
+						{
+							cout << "======공격력증가물약 Use======\n\n";
+							cout << "공격력이 20% 증가되었습니다!\n\n";
+							cout << " " << player->getName() << "Attack : " << player->getAttack() << endl;
+						}
+						else
+						{
+							cout << "========================\n\n";
+							cout << "공격력 증가 물약이 부족합니다.\n\n";
+							goto MAKE_CHOICE2;
+						}
+						break;
+
+					case 4:
+						if (player->useItem(EItemType::EArmor))
+						{
+							cout << "======최대체력 증가 물약 Use======\n\n";
+							cout << "최대체력이 30% 증가되었습니다!\n\n";
+							cout << " " << player->getName() << "MaxHealth : " << player->getmaxHP() << endl;
+							cout << "공격력 : " << player->getAttack() << endl;
+						}
+						else
+						{
+							cout << "========================\n\n";
+							cout << "최대체력 증가 물약이 부족합니다.\n\n";
+							goto MAKE_CHOICE2;
+						}
+						break;
+
+					case 5:
 						cout << "========================\n\n";
 						cout << "돌아갑니다\n\n";
 						goto MAKE_CHOICE1;
@@ -147,6 +180,12 @@ void GameManager::MonsterRound()
 			player->setExp();
 			player->levelUp();
 			Gold::getinstance().add();
+			Bag* myBag = player->getBag();
+			if (myBag) {
+				myBag->TakeRandomItem();  
+			}
+		
+			
 			
 		     //아이템 count 연동 , 전리품 기능함수 추가
 		}

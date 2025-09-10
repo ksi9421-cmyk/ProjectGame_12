@@ -5,15 +5,15 @@
 #include <string>
 #include <utility>
 #include <vector>
-#include <random>
+
 
 using namespace std;
 
-Item::Item(std::string name, int price, std::string info) : name(std::move(name)), price(price), info(std::move(info))
+Item::Item(std::string name, int price, std::string info, int inCount) : name(name), price(price), info(info), count(inCount)
 {
 }
 
-const std::string Item::getName() const
+std::string Item::getName() const
 {
 	return name;
 }
@@ -27,3 +27,4 @@ const std::string& Item::getinfo() const
 {
 	return info;
 }
+

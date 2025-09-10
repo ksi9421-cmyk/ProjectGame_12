@@ -149,6 +149,7 @@ void GameManager::MonsterRound()
 			player->setExp();
 			player->levelUp();
 			Gold::getinstance().add();
+			bag->TakeRandomItem();
 			
 		     //아이템 count 연동 , 전리품 기능함수 추가
 		}

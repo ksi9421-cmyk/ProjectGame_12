@@ -10,8 +10,9 @@ class GameManager
 {
 private:
 	int Round;
-
+	
 	shared_ptr<Player> player;
+	shared_ptr<Bag> bag;
 
 	GameManager();
 

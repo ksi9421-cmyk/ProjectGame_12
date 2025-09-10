@@ -13,13 +13,14 @@ public:
 
 private:
     Player* Owner;
-    std::unordered_map<EItemType, std::weak_ptr<Item>> items_;
+    std::unordered_map<EItemType, std::shared_ptr<Item>> items_;
 
 public:
 
     Bag(Player* owner);
     ~Bag();
 public:
+    void TakeRandomItem();
     void printInfo() const;
 
 public:
@@ -33,7 +34,7 @@ public:
         if (GetSize() == 0)
         {
             std::cout << "가방이 비어있습니다." << std::endl;
-            
+
         }
     }
     bool useItem(EItemType ItemType);

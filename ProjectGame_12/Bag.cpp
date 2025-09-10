@@ -7,13 +7,13 @@
 
 Bag::Bag(Player* owner)
 {
-    Owner = owner;
+	Owner = owner;
 
-    //quickSlots_.resize(QUICKSLOT_NUM);
-    items_.emplace(EItemType::HealAmount, std::make_shared<PotionHealAmount>("[Potion]", 10, "100 HP heal", 100, 0));
-    items_.emplace(EItemType::HealRatio, std::make_shared<PotionHealRatio>("[elixirr]", 20, "50% MaxHP heal", 0.5f, 0));
-    items_.emplace(EItemType::EWeapon, std::make_shared<Weapon>("íƒ‘ ê´€ë¦¬ìì˜ ê²€", 80, "damage 20% up", 0.2f, 0));
-    items_.emplace(EItemType::EArmor, std::make_shared<Armor>("íƒ‘ ê´€ë¦¬ìì˜ ê°‘ì˜·", 80, "max hp up", 0.3f, 0));
+	//quickSlots_.resize(QUICKSLOT_NUM);
+	items_.emplace(EItemType::HealAmount, std::make_shared<PotionHealAmount>("[Potion]", 10, "100 HP heal", 100, 0));
+	items_.emplace(EItemType::HealRatio, std::make_shared<PotionHealRatio>("[elixirr]", 20, "50% MaxHP heal", 0.5f, 0));
+	items_.emplace(EItemType::EWeapon, std::make_shared<Weapon>("Å¾ °ü¸®ÀÚÀÇ °Ë", 80, "damage 20% up", 0.2f, 0));
+	items_.emplace(EItemType::EArmor, std::make_shared<Armor>("Å¾ °ü¸®ÀÚÀÇ °©¿Ê", 80, "max hp up", 0.3f, 0));
 }
 
 Bag::~Bag()
@@ -22,33 +22,31 @@ Bag::~Bag()
 
 void Bag::addItem(EItemType ItemType, int count)
 {
-    items_[ItemType].lock()->addCount(count);
+	items_[ItemType]->addCount(count);
 };
 
 void Bag::printInfo() const {
-    for (auto& witem : items_)
-    {
-        if (auto item = witem.second.lock())
-        {
-            std::cout << "[" << item->getName() << "] ê°€ê²©:" << item->getPrice()
-                << " ì„¤ëª…:" << item->getinfo() << "\n";
-        }
-    }
+	for (auto& witem : items_)
+	{
+		if (auto item = witem.second)
+		{
+			std::cout << "[" << item->getName() << "] °¡°İ:" << item->getPrice()
+				<< " ¼³¸í:" << item->getinfo() << "\n";
+		}
+	}
 }
 
 bool Bag::useItem(EItemType ItemType) {
-    if(Owner == nullptr)
-        return false;
+	
 
-    if (items_[ItemType].lock() == nullptr)
-        return false;
+	if (items_[ItemType]->getCount() < 1)
+	{
+		return false;
+	}
 
-    if (items_[ItemType].lock()->getCount() < 1)
-        return false;
+	items_[ItemType]->use(Owner);
 
-    items_[ItemType].lock()->use(Owner);
-
-    return true;
+	return true;
 }
 
 
@@ -61,23 +59,23 @@ void Bag::TakeRandomItem()
 	if (randomNumber >= 95)
 	{
 		addItem(EItemType::EWeapon, 1);
-		cout << "[íƒ‘ ê´€ë¦¬ìì˜ ê²€]ì„ íšë“í•˜ì˜€ìŠµë‹ˆë‹¤\n";
+		cout << "[Å¾ °ü¸®ÀÚÀÇ °Ë]À» È¹µæÇÏ¿´½À´Ï´Ù\n";
 	}
 	else if (randomNumber >= 90)
 	{
 		addItem(EItemType::EArmor, 1);
-		cout << "[íƒ‘ ê´€ë¦¬ìì˜ ê°‘ì˜·]ì„ íšë“í•˜ì˜€ìŠµë‹ˆë‹¤\n";
+		cout << "[Å¾ °ü¸®ÀÚÀÇ °©¿Ê]À» È¹µæÇÏ¿´½À´Ï´Ù\n";
 	}
 	else if (randomNumber >= 82)
 	{
 		addItem(EItemType::HealAmount, 1);
-		cout << "[elixirr] ì„ íšë“í•˜ì˜€ìŠµë‹ˆë‹¤\n";
+		cout << "[elixirr] À» È¹µæÇÏ¿´½À´Ï´Ù\n";
 	}
 	else if (randomNumber >= 70)
 	{
 		addItem(EItemType::HealRatio, 1);
-		cout << "[Potion] ì„ íšë“í•˜ì˜€ìŠµë‹ˆë‹¤\n";
+		cout << "[Potion] À» È¹µæÇÏ¿´½À´Ï´Ù\n";
 	}
 
-	cout << "ì•„ë¬´ê²ƒë„ ì–»ì§€ ëª»í–ˆìŠµë‹ˆë‹¤ ã… ã… \n";
+	cout << "¾Æ¹«°Íµµ ¾òÁö ¸øÇß½À´Ï´Ù ¤Ğ¤Ğ\n";
 }

@@ -28,7 +28,7 @@ public:
 		price = 0;
 		count = 0;
 	}
-	Item(std::string name, int price, std::string info,int count);
+	Item(std::string name, int price, std::string info, int count);
 	virtual ~Item() = default;
 
 	virtual EItemType GetType() = 0;

@@ -13,7 +13,7 @@ public:
 
 private:
     Player* Owner;
-    std::unordered_map<EItemType, std::weak_ptr<Item>> items_;
+    std::unordered_map<EItemType, std::shared_ptr<Item>> items_;
 
 public:
 
@@ -33,8 +33,8 @@ public:
     {
         if (GetSize() == 0)
         {
-            std::cout << "ê°€ë°©ì´ ë¹„ì–´ìˆìŠµë‹ˆë‹¤." << std::endl;
-            
+            std::cout << "°¡¹æÀÌ ºñ¾îÀÖ½À´Ï´Ù." << std::endl;
+
         }
     }
     bool useItem(EItemType ItemType);

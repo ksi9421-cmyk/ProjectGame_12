@@ -10,14 +10,12 @@ Weapon::Weapon(std::string name, int price, std::string info, float damage, int 
 	:Item(name, price, info, count), damage(damage) {
 }
 
-Weapon::~Weapon()
-{
-
-}
+Weapon::~Weapon() = default;
 
 void Weapon::use(Player* target) {
-	int bonus = static_cast<int>(target->getAttack() * damage);
+	int bonus = static_cast<int>(target->getAttack() * 0.2);
 	target->powerUp(bonus);
 
-	std::cout << getName() << " damage 20% up.(+" << bonus << ")\n";
+
+	std::cout << "steal sword." << getName() << " damage 20% up.(+" << bonus << ")\n";
 }

@@ -30,7 +30,6 @@ void Player::takeDamage(int Damage)
 	if (Health < 0)
 		Health = 0;
 
-	cout << "-" << Damage << endl;
 }
 
 void Player::openInventory() 
@@ -83,4 +82,13 @@ string Player::getName()
 void Player::setName(const string& nickname)
 {
 	Name = nickname;
+}
+
+void Player::setExp()
+{
+	Exp += 100;
+}
+int Player::getExp()
+{
+	return Exp;
 }

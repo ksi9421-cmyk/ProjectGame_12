@@ -35,4 +35,6 @@ public:
 
     string getName();
     void setName(const string& nickname);
+    int getExp();
+    void setExp();
 };

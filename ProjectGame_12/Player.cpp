@@ -19,7 +19,7 @@ void Player::levelUp()
 		Exp = 0;
 
 		cout << "Level: " << Level << endl;
-		cout << "Attack Up: " << Attack << ", HP Up: " << Health << endl << endl;
+		cout << "Attack Up: " << Attack << ", HP Up: " << maxHP << endl << endl;
 	}
 }
 

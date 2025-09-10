@@ -25,6 +25,7 @@ public:
 
 public:
     void addItem(EItemType ItemType, int count);
+    Item* getItem(EItemType type);
     int GetSize() const
     {
         return (int)items_.size();

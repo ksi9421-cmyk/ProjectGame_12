@@ -7,20 +7,20 @@ using namespace std;
 
 Shop::Shop()
 {
-    Itemlist.push_back({ "HP 50 증가 물약",10 }); // 상점에서 판매 리스트
-    Itemlist.push_back({ "HP 50% 증가 물약",20 });
-    Itemlist.push_back({ "공격력 증가 물약",80 });
-    Itemlist.push_back({ "최대체력 증가 물약",80 });
+    Itemlist.push_back({ "HP 50 증가 물약",10, EItemType::HealAmount }); // 상점에서 판매 리스트
+    Itemlist.push_back({ "HP 50% 증가 물약",20, EItemType::HealRatio });
+    Itemlist.push_back({ "공격력 증가 물약",80, EItemType::EWeapon });
+    Itemlist.push_back({ "최대체력 증가 물약",80, EItemType::EArmor });
 }
 
-void Shop::buyItem(Gold& playerGold)
+void Shop::buyItem(Player* player)
 {
     int index; // 템 번호
 
     while (true) // 템 사거나 잘못된 번호 입력하면 끝나서 while문 사용
     {
         // 맨 위에 플레이어 골드 출력 (항상 한 줄만)
-        cout << "\n플레이어 현재 골드: " << playerGold.getAmount() << " Gold" << endl;
+        cout << "\n플레이어 현재 골드: " << Gold::getinstance().getAmount() << " Gold" << endl;
 
         // 상점 목록 출력
         cout << "===== 탑의 상점 =====" << endl;
@@ -43,22 +43,28 @@ void Shop::buyItem(Gold& playerGold)
 
         if (index < 1 || index >(int)Itemlist.size())
         {
-            cout << "똑바로 고르세요." << endl;
+            cout << "잘못된 입력값입니다." << endl;
             continue;
         }
 
         ShopItem selectItem = Itemlist[index - 1]; // 0부터 시작하니까 -1 해줘서 1부터 시작하게 해줌
 
-        if (playerGold.spend(selectItem.price))
+        if (Gold::getinstance().spend(selectItem.price))
         {
-            cout << selectItem.name << "을 구매하셨습니다." << endl;
-            
-        }
-        else
-        {
-            cout << "골드가 부족합니다. 다시 선택하세요." << endl;
-        }
+            cout << selectItem.name << "을 구매하였습니다." << endl;
 
-        // 반복문이 돌아가면 맨 위 골드가 갱신되면서 상점 화면 다시 출력
+            
+            auto item = player->getBag()->getItem(selectItem.type);
+            if (item)
+            {
+                item->addCount(1);
+            }
+            
+           
+
+        }
     }
+
+    // 반복문이 돌아가면 맨 위 골드가 갱신되면서 상점 화면 다시 출력
 }
+

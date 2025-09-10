@@ -186,7 +186,6 @@ void GameManager::MonsterRound()
 		{
 			myBag->TakeRandomItem();
 		}
-		//아이템 count 연동 , 전리품 기능함수 추가
 	}
 	else if (player->getHealth() <= 0)
 	{
@@ -198,21 +197,30 @@ void GameManager::MonsterRound()
 
 void GameManager::VisitShop()
 {
-	int NextChoice = 0;
-	cout << "======상점======\n\n";
-	cout << "1. 다음 층\n\n";
-	cout << "2. 상점\n\n";
-	cout << "다음 층으로 넘어가시겠습니까? : ";
-	cin >> NextChoice;
-		
-	switch (NextChoice)
+	Shop shop;
+	while (1)
 	{
-	case 1:
-		break;
+	MAKE_CHOICE:
+		int NextChoice = 0;
+		cout << "======상점======\n\n";
+		cout << "1. 다음 층\n\n";
+		cout << "2. 상점\n\n";
+		cout << "다음 층으로 넘어가시겠습니까? : ";
+		cin >> NextChoice;
 
-	case 2:
-		Shop shop;
-		shop.buyItem();
+		switch (NextChoice)
+		{
+		case 1:
+			break;
+
+		case 2:
+			shop.buyItem();
+			break;
+
+		default:
+			cout << "다시 선택해주세요 \n\n";
+			goto MAKE_CHOICE;
+		}
 		break;
 	}
 }
@@ -248,7 +256,7 @@ void GameManager::BossRound()
 					cout << "======유저 공격======\n\n";
 					cout << player->getName() << "이(가)" << Boss.getName() << "을(를)" << player->getAttack() << "만큼 공격 했습니다!!\n";
 					Boss.takeDamage(player->getAttack());
-					cout << "*몬스터 HP : " << Boss.getHealth() << "*\n\n";
+					cout << "*보스 HP : " << Boss.getHealth() << "*\n\n";
 
 					break;
 
@@ -337,7 +345,7 @@ void GameManager::BossRound()
 
 					default:
 						cout << "다시 선택해주세요 \n\n";
-						goto MAKE_CHOICE1;
+						goto MAKE_CHOICE2;
 					}
 				default:
 					cout << "다시 선택해주세요 \n\n";

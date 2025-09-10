@@ -63,7 +63,7 @@ void GameManager::MonsterRound()
 					break;
 
 				case 2:
-					//cout << " " << 인벤토리 << endl;
+					player.lock()->openInventory();
 					cout << "어떤 아이템을 사용하시겠습니까? : \n";
 					cout << "1. Hp물약\n";
 					cout << "2. Attack물약\n";
@@ -74,17 +74,17 @@ void GameManager::MonsterRound()
 					switch (InvenChoice)
 					{
 					case 1:
-						//if (inventory.hppotion > 0)
-						//{
-						//	PlayerHp += HPpotion;
-						//	cout << "HP가 증가되었습니다!\n";
-						//	cout << "HP : " << PlayerHp << "Attack : " << PlayerAttack << endl;
-						//}
-						//else
-						//{
-						//	cout << "HP 물약이 부족합니다.\n"
-						//}
-						break;
+						/*if (inventory.hppotion > 0)
+						{
+							PlayerHp += HPpotion;
+							cout << "HP가 증가되었습니다!\n";
+							cout << "HP : " << PlayerHp << "Attack : " << PlayerAttack << endl;
+						}
+						else
+						{
+							cout << "HP 물약이 부족합니다.\n"
+						}
+						break;*/
 
 					case 2:
 						//if (inventory.Attackpotion > 0)

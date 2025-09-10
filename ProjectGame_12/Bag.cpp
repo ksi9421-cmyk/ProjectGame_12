@@ -10,6 +10,10 @@ Bag::Bag(Player* owner)
     Owner = owner;
 }
 
+Bag::~Bag()
+{
+}
+
 void Bag::printInfo() const {
     for (auto witem : items_)
     {
@@ -23,6 +27,7 @@ void Bag::printInfo() const {
 
 void Bag::useAt(int index) {
     if(Owner == nullptr)
+        return;
     if (index >= items_.size())
     {
         std::cout << "잘못된 인덱스 입니다.\n";

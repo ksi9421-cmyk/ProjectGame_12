@@ -4,7 +4,6 @@
 #include <string>
 #include <iostream>
 
-
 class Player;
 
 class Bag
@@ -12,12 +11,10 @@ class Bag
 private:
     Player* Owner;
     std::vector<std::weak_ptr<Item>> items_;
-    
+
 public:
     Bag(Player* owner);
-    ~Bag()
-    {
-    }
+    ~Bag();
 public:
     virtual void printInfo() const;
 

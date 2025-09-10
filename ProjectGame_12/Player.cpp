@@ -4,7 +4,7 @@
 using namespace std;
 
 Player::Player() :
-	Name("Player"), Level(1), Health(200), Attack(30), Exp(0), maxHP(200), bag(std::make_unique<Bag>())
+	Name("Player"), Level(1), Health(200), Attack(30), Exp(0), maxHP(200), bag(std::make_unique<Bag>(this))
 {
 }
 
@@ -39,9 +39,8 @@ void Player::openInventory()
 	bag->printInfo();
 }
 
-void Player::useItem()
+void Player::useItem(int index)
 {
-	int index;
 	bag->printInfo();
 	bag->useAt(index);
 }
@@ -82,7 +81,7 @@ string Player::getName()
 	return Name;
 }
 
-string Player::setName(const string& nickname)
+void Player::setName(const string& nickname)
 {
 	Name = nickname;
 }

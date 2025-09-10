@@ -6,7 +6,7 @@
 
 using namespace std;
 
-struct Item // 데이터묶음
+struct ShopItem // 데이터묶음
 {
 	string name; // 템 이름
 	int price; // 템 가격
@@ -15,7 +15,7 @@ struct Item // 데이터묶음
 class Shop
 {
 private:
-	vector<Item> Itemlist; // 상점판매목록
+	vector<ShopItem> Itemlist; // 상점판매목록
 
 
 public:

@@ -47,7 +47,7 @@ void Shop::buyItem()
             continue;
         }
 
-        Item selectItem = Itemlist[index - 1]; // 0부터 시작하니까 -1 해줘서 1부터 시작하게 해줌
+        ShopItem selectItem = Itemlist[index - 1]; // 0부터 시작하니까 -1 해줘서 1부터 시작하게 해줌
 
         if (Gold::getinstance().spend(selectItem.price))
         {

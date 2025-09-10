@@ -2,11 +2,12 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "Bag.h"
 
 
 using namespace std;
 
-class Bag;
+
 class item;
 class Player {
 private:
@@ -18,13 +19,13 @@ private:
     int Exp;
     std::unique_ptr<Bag> bag;
 
-    Player();
-    
 public:
+    Player();
+
     void levelUp();
     void takeDamage(int Damage);
     void openInventory();
-    void useItem();
+    bool useItem(EItemType ItemType);
     void heal(int amount);
     void powerUp(int amount);
     void addmaxHP(int amount);
@@ -33,7 +34,5 @@ public:
     int getAttack();
 
     string getName();
-    string setName(const string& nickname);
-
-
+    void setName(const string& nickname);
 };

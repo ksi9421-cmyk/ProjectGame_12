@@ -185,7 +185,7 @@ void GameManager::MonsterRound()
 			if (monster->getHealth() > 0)
 			{
 				cout << "======몬스터 공격======\n\n";
-				cout << monster->getName() << "이(가)" << player->getName() << "을(를) " << monster->getAttack() << "만큼 공격 당했습니다!!\n";
+				cout << monster->getName() << "이(가)" << player->getName() << "을(를) " << monster->getAttack() << "만큼 공격 했습니다!!\n";
 				player->takeDamage(monster->getAttack());
 				cout << "* " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "*\n\n";
 
@@ -400,7 +400,7 @@ void GameManager::BossRound()
 				}
 
 				cout << "======보스 공격======\n\n";
-				cout << Boss.getName() << "이(가)" << player->getName() << "을(를) " << Boss.getAttack() << "만큼 공격 당했습니다!!\n";
+				cout << Boss.getName() << "이(가)" << player->getName() << "을(를) " << Boss.getAttack() << "만큼 공격 했습니다!!\n";
 				player->takeDamage(Boss.getAttack());
 				cout << "* " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "*\n\n";
 			}

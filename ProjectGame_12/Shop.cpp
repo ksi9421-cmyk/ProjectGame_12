@@ -7,7 +7,7 @@ using namespace std;
 
 Shop::Shop()
 {
-    Itemlist.push_back({ "HP 50 증가 물약",10, EItemType::HealAmount }); // 상점에서 판매 리스트
+    Itemlist.push_back({ "HP 100 증가 물약",10, EItemType::HealAmount }); // 상점에서 판매 리스트
     Itemlist.push_back({ "HP 50% 증가 물약",20, EItemType::HealRatio });
     Itemlist.push_back({ "공격력 증가 물약",40, EItemType::EWeapon });
     Itemlist.push_back({ "최대체력 증가 물약",40, EItemType::EArmor });

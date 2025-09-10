@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include "Gold.h"
+#include "Player.h"
 
 using namespace std;
 
@@ -10,6 +11,7 @@ struct ShopItem // 데이터묶음
 {
 	string name; // 템 이름
 	int price; // 템 가격
+	EItemType type;
 };
 
 class Shop
@@ -21,5 +23,7 @@ private:
 public:
 
 	Shop();
-	void buyItem(); // 골드 클래스 참조해서 차감
+	void buyItem(Player* player); 
+	
+
 };

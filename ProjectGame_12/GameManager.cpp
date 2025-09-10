@@ -215,7 +215,7 @@ void GameManager::VisitShop()
 
 	case 2:
 		Shop shop;
-		shop.buyItem();
+		shop.buyItem(player.get());
 		break;
 	}
 }

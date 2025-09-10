@@ -18,6 +18,7 @@ private:
 public:
 	void GameStart();
 	void MonsterRound();
+	void VisitShop();
 	void BossRound();
 	int GameOver();
 	static int getRound() { return Round; }

@@ -30,7 +30,6 @@ void Player::takeDamage(int Damage)
 	if (Health < 0)
 		Health = 0;
 
-	cout << "-" << Damage << endl;
 }
 
 void Player::openInventory() 

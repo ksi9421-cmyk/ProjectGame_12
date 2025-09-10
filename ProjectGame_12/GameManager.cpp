@@ -91,9 +91,10 @@ void GameManager::MonsterRound()
 						else
 						{
 							cout << "HP 물약이 부족합니다.\n";
+							goto MAKE_CHOICE2;
 						}
-						goto MAKE_CHOICE2;
 						break;
+						
 
 					case 2:
 						if (player->useItem(EItemType::HealRatio))
@@ -103,15 +104,16 @@ void GameManager::MonsterRound()
 						}
 						else
 						{
-					    	cout << "Hp가 50% 물약이 부족합니다.";
+					    	cout << "Hp가 50% 물약이 부족합니다.\n";
+							goto MAKE_CHOICE2;
 						}
-						goto MAKE_CHOICE2;
 						break;
+						
 
 					case 3:
 						cout << "돌아갑니다";
 						goto MAKE_CHOICE1;
-						break;
+						
 					}
 					break;
 				}

@@ -34,7 +34,7 @@ void GameManager::GameStart()
 
 	system("cls");
 	cout << "로딩중....." << endl;
-	Sleep(2000);
+	Sleep(1250);
 	system("cls");
 
 	cout << player->getName() << "으로 설정되었습니다!\n\n";
@@ -52,6 +52,11 @@ void GameManager::MonsterRound()
 	int TrunChoice = 0;
 	int InvenChoice = 0;
 
+	system("cls");
+	cout << "로딩중....." << endl;
+	Sleep(1250);
+	system("cls");
+	
 	cout << "======" << Round << "층 몬스터!!======\n\n";
 	cout << "*****몬스터 등장!!*****\n\n";
 	monster->roar();
@@ -61,11 +66,17 @@ void GameManager::MonsterRound()
 		if (monster->getHealth() > 0)
 		{
 		MAKE_CHOICE1:
+
 			cout << "======유저 턴======\n\n";
 			cout << "1. 공격하기\n";
 			cout << "2. 인벤토리 열기\n";
 			cout << "선택해주세요 : ";
 			cin >> TrunChoice;
+
+			system("cls");
+			cout << "로딩중....." << endl;
+			Sleep(1250);
+			system("cls");
 
 			switch (TrunChoice)
 			{
@@ -214,6 +225,11 @@ void GameManager::VisitShop()
 		cout << "다음 층으로 넘어가시겠습니까? : ";
 		cin >> NextChoice;
 
+		system("cls");
+		cout << "로딩중....." << endl;
+		Sleep(1250);
+		system("cls");
+
 		switch (NextChoice)
 		{
 		case 1:
@@ -222,6 +238,12 @@ void GameManager::VisitShop()
 		case 2:
 			
 			shop.buyItem(player.get()); 
+
+			system("cls");
+			cout << "로딩중....." << endl;
+			Sleep(1250);
+			system("cls");
+
 			break;
 
 		default:
@@ -240,6 +262,11 @@ void GameManager::BossRound()
 
 	if (Round == 10)
 	{
+		system("cls");
+		cout << "로딩중....." << endl;
+		Sleep(1250);
+		system("cls");
+
 		cout << "======" << Round << "층 보스!!======\n\n";
 		cout << "*****B.O.S.S!!!*****\n\n";
 		Boss_RedDragon Boss;
@@ -256,6 +283,11 @@ void GameManager::BossRound()
 				cout << "2. 인벤토리 열기\n\n";
 				cout << "선택해주세요 : ";
 				cin >> TrunChoice;
+
+				system("cls");
+				cout << "로딩중....." << endl;
+				Sleep(1250);
+				system("cls");
 
 				switch (TrunChoice)
 				{

@@ -146,8 +146,11 @@ void GameManager::MonsterRound()
 		}
 		if (monster->getHealth() <= 0)
 		{
+			player->setExp();
 			player->levelUp();
-			//몬스터 item, 플레이어 exp 획득
+			Gold::getinstance().add();
+			
+		     //아이템 count 연동 , 전리품 기능함수 추가
 		}
 		else if (player->getHealth() <= 0)
 		{

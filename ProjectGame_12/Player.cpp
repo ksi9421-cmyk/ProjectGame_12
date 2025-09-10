@@ -83,3 +83,12 @@ void Player::setName(const string& nickname)
 {
 	Name = nickname;
 }
+
+void Player::setExp()
+{
+	Exp += 100;
+}
+int Player::getExp()
+{
+	return Exp;
+}

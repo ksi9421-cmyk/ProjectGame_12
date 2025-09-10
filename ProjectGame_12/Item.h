@@ -23,12 +23,7 @@ private:
 	int count;
 
 public:
-	Item()
-	{
-		price = 0;
-		count = 0;
-	}
-	Item(std::string name, int price, std::string info);
+	Item(std::string name, int price, std::string info,int count);
 	virtual ~Item() = default;
 
 	virtual EItemType GetType() = 0;
@@ -43,8 +38,7 @@ public:
 	{
 		return count;
 	}
-
-	const std::string  getName() const;
+	virtual std::string  getName() const;
 	int getPrice() const;
 	const std::string& getinfo() const;
 	virtual void printInfo() const {
@@ -57,12 +51,8 @@ class Weapon : public Item
 {
 public:
 	int damage;
-	Weapon() 
-	{
-		damage = 1;
-	}
 	~Weapon();
-	Weapon(std::string name, int price, std::string info, int damage);;
+	Weapon(std::string name, int price, std::string info, float damage, int count);;
 
 	EItemType GetType() override {
 		return EItemType::EWeapon;
@@ -75,12 +65,7 @@ class Armor : public Item
 public:
 	int HPBoost;
 	float HPBoostRatio;
-	Armor() 
-	{
-		HPBoost = 0;
-		HPBoostRatio = 1;
-	}
-	Armor(std::string name, int price, std::string info, float HPBoostRatio);
+	Armor(std::string name, int price, std::string info, float HPBoostRatio, int count);
 	~Armor() override;
 
 	EItemType GetType() override {
@@ -92,12 +77,8 @@ public:
 class PotionHealAmount : public Item {
 public:
 	int healAmount;
-	PotionHealAmount()
-	{
-		healAmount = 100;
-	}
-	PotionHealAmount(std::string name, int price, std::string info, int inHealAmount)
-		: Item(name, price, info), healAmount(inHealAmount)
+	PotionHealAmount(std::string name, int price, std::string info, int inHealAmount, int count)
+		: Item(name, price, info, count), healAmount(inHealAmount)
 	{
 	}
 	EItemType GetType() override {
@@ -109,17 +90,14 @@ public:
 class PotionHealRatio : public Item {
 public:
 	float healRatio;
-	PotionHealRatio()
-	{
-		healRatio = 1;
-	}
-	PotionHealRatio(std::string name, int price, std::string info, float inHealRatio)
-		: Item(name, price, info), healRatio(inHealRatio)
+	PotionHealRatio(std::string name, int price, std::string info, float inHealRatio, int count)
+		: Item(name, price, info, count), healRatio(inHealRatio)
 	{
 	}
 	EItemType GetType() override {
 		return EItemType::HealRatio;
 	}
 	void use(Player* target);
+
 };
 

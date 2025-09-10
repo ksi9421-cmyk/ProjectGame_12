@@ -3,7 +3,7 @@
 #include "Item.h"
 #include <iostream>
 #include <vector>
-
+#include <random>
 
 Bag::Bag(Player* owner)
 {
@@ -49,4 +49,36 @@ bool Bag::useItem(EItemType ItemType) {
     items_[ItemType].lock()->use(Owner);
 
     return true;
+}
+Item* Bag::Dropitem()
+{
+	std::random_device rd;
+	std::mt19937 gen(rd());
+	std::uniform_int_distribution<int>distribute(1, 100);
+	int randomNumber = distribute(gen);
+	if (randomNumber <= 95)
+	{
+		cout << "[탑 관리자의 검]을 획득하였습니다\n";
+		return new Weapon("탑 관리자의 검", 80, "damage 20% up",0.2f, 1);
+	}
+	else if (randomNumber <= 90)
+	{
+		cout << "[탑 관리자의 갑옷]을 획득하였습니다\n";
+		return new Armor("탑 관리자의 갑옷", 80, "max hp up",0.3f , 1);
+	}
+	else if (randomNumber <= 82)
+	{
+		cout << "[elixirr] 을 획득하였습니다\n";
+		return new PotionHealRatio("[elixirr]", 20, "50% MaxHP heal",0.5f, 1);
+	}
+	else if (randomNumber <= 70)
+	{
+		cout << "[Potion] 을 획득하였습니다\n";
+		return new PotionHealAmount("[Potion]", 10, "100 HP heal",100, 1);
+	}
+	else
+	{
+		cout << "아무것도 얻지 못했습니다 ㅠㅠ\n";
+		return nullptr;
+	}
 }

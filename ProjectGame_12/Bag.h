@@ -20,6 +20,7 @@ public:
     Bag(Player* owner);
     ~Bag();
 public:
+    Item* Dropitem();
     void printInfo() const;
 
 public:

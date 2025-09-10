@@ -152,8 +152,14 @@ void GameManager::MonsterRound()
 					cout << "========================\n\n";
 					cout << "돌아갑니다\n\n";
 					goto MAKE_CHOICE1;
+
+				default:
+					cout << "다시 선택해주세요 \n\n";
+					goto MAKE_CHOICE2;
 				}
-				break;
+			default:
+				cout << "다시 선택해주세요 \n\n";
+				goto MAKE_CHOICE1;
 			}
 			if (monster->getHealth() > 0)
 			{
@@ -328,9 +334,16 @@ void GameManager::BossRound()
 						cout << "========================\n\n";
 						cout << "돌아갑니다\n\n";
 						goto MAKE_CHOICE1;
+
+					default:
+						cout << "다시 선택해주세요 \n\n";
+						goto MAKE_CHOICE1;
 					}
-					break;
+				default:
+					cout << "다시 선택해주세요 \n\n";
+					goto MAKE_CHOICE1;
 				}
+
 				cout << "======보스 공격======\n\n";
 				cout << Boss.getName() << "이(가)" << player->getName() << "을(를) " << Boss.getAttack() << "만큼 공격 당했습니다!!\n";
 				player->takeDamage(Boss.getAttack());

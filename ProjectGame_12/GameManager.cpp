@@ -23,7 +23,7 @@ GameManager::GameManager() : player(make_shared<Player>()) , Round(1)
 
 void GameManager::GameStart()
 {
-	cout << "======TOP Monster======\n";
+	cout << "======TOP Monster======\n\n";
 	cout << "캐릭터 이름 : ";
 	
 	string nickname;
@@ -31,8 +31,9 @@ void GameManager::GameStart()
 
 	player->setName(nickname);
 
-	cout << player->getName() << "으로 설정되었습니다!\n";
-	cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "공격력 : " << player->getAttack() << endl;
+	cout << player->getName() << "으로 설정되었습니다!\n\n";
+	cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+	cout << "공격력 : " << player->getAttack() << endl;
 }
 
 
@@ -45,39 +46,45 @@ void GameManager::MonsterRound()
 	int TrunChoice = 0;
 	int InvenChoice = 0;
 
-		cout << "======" << Round << "층 Monster!!======\n";
-		cout << "*****Monster 등장!!*****\n";
+		cout << "======" << Round << "층 Monster!!======\n\n";
+		cout << "*****Monster 등장!!*****\n\n";
 		monster->roar();
-		cout << "Monster HP : " << monster->getHealth() << "Monster Attack : " << monster->getAttack() << endl;
+		cout << "Monster HP : " << monster->getHealth() << " / Monster Attack : " << monster->getAttack() << endl;
 
 		while (player->getHealth() >0 && monster->getHealth() >0)
 		{
 			if (monster->getHealth() > 0)
 			{
 				MAKE_CHOICE1:
-				cout << "======My Turn======\n";
-				cout << "선택해주세요 : \n";
+				cout << "======My Turn======\n\n";
 				cout << "1. 공격하기\n";
 				cout << "2. 인벤토리 열기\n";
+				cout << "선택해주세요 : ";
 				cin >> TrunChoice;
 
 				switch (TrunChoice)
 				{
 				case 1:
-					cout << player->getName() << "이(가)" << monster->getName() << "을(를) 공격했습니다!!\n";
-					 monster->takeDamage(player->getAttack());
-					cout << player->getAttack() << "만큼 데미지를 입혔습니다!!\n";
+					cout << "======My Attack======\n\n";
+					cout << player->getName() << "이(가)" << monster->getName() << "을(를) 공격했습니다!!\n\n";
+					cout << player->getAttack() << "만큼 공격 했습니다!!\n\n";
+					monster->takeDamage(player->getAttack());
+					cout << "========================\n\n";
+					cout << "Monster HP : " << monster->getHealth() << " / Monster Attack : " << monster->getAttack() << endl;
 					break;
 
 				case 2:
 				MAKE_CHOICE2:
 
 					player->openInventory();
-					cout << "어떤 아이템을 사용하시겠습니까? : \n";
-					cout << "1. Hp물약\n";
-					cout << "2. 50%물약\n";
-					cout << "3. 돌아가기\n";
-					cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "공격력 : " << player->getAttack() << endl;
+					cout << "======Use Item======\n\n";
+					cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+					cout << "공격력 : " << player->getAttack() << endl;
+					cout << "========================\n\n";
+					cout << "1. Hp물약\n\n";
+					cout << "2. 50%물약\n\n";
+					cout << "3. 돌아가기\n\n";
+					cout << "어떤 아이템을 사용하시겠습니까? : ";
 					cin >> InvenChoice;
 
 					switch (InvenChoice)
@@ -85,41 +92,51 @@ void GameManager::MonsterRound()
 					case 1:
 						if (player->useItem(EItemType::HealAmount))
 						{
-							cout << "HP가 증가되었습니다!\n";
-							cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "공격력 : " << player->getAttack() << endl;
+							cout << "======Hp 100 Potion Use======\n\n";
+							cout << "HP가 증가되었습니다!\n\n";
+							cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+							cout << "공격력 : " << player->getAttack() << endl;
 						}
 						else
 						{
-							cout << "HP 물약이 부족합니다.\n";
+							cout << "========================\n\n";
+							cout << "HP 물약이 부족합니다.\n\n";
+							goto MAKE_CHOICE2;
 						}
-						goto MAKE_CHOICE2;
 						break;
 
 					case 2:
 						if (player->useItem(EItemType::HealRatio))
 					    {
-							cout << "Hp가 50% 증가되었습니다!\n";
-							cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "공격력 : " << player->getAttack() << endl;
+							cout << "======Hp 50% Potion Use======\n\n";
+							cout << "Hp가 50% 증가되었습니다!\n\n";
+							cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+							cout << "공격력 : " << player->getAttack() << endl;
 						}
 						else
 						{
-					    	cout << "Hp가 50% 물약이 부족합니다.";
+							cout << "========================\n\n";
+					    	cout << "Hp가 50% 물약이 부족합니다.\n\n";
+							goto MAKE_CHOICE2;
 						}
-						goto MAKE_CHOICE2;
 						break;
-
+						
 					case 3:
-						cout << "돌아갑니다";
+						cout << "========================\n\n";
+						cout << "돌아갑니다\n\n";
 						goto MAKE_CHOICE1;
-						break;
 					}
 					break;
 				}
 				if (monster->getHealth() > 0)
 				{
-					cout << monster->getName() << "이(가)" << player->getName() << "을(를) 공격했습니다!!\n";
+					cout << "======Monster Trun======\n\n";
+					cout << monster->getName() << "이(가)" << player->getName() << "을(를) 공격했습니다!!\n\n";
+					cout << monster->getAttack() << "만큼 공격 당했습니다!!\n\n";
 					player->takeDamage(monster->getAttack());
-					cout << monster->getAttack() << "만큼 데미지를 입혔습니다!!\n";
+					cout << "========================\n\n";
+					cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+					cout << "공격력 : " << player->getAttack() << endl;
 				}
 				else
 				{
@@ -130,10 +147,11 @@ void GameManager::MonsterRound()
 		if (monster->getHealth() <= 0)
 		{
 			player->levelUp();
+			//몬스터 item, 플레이어 exp
 		}
 		else if (player->getHealth() <= 0)
 		{
-			cout << monster->getName() << "에게 당했습니다...\n";
+			cout << monster->getName() << "에게 당했습니다...\n\n";
 			GameOver();
 		}
 		Round++;
@@ -142,9 +160,10 @@ void GameManager::MonsterRound()
 void GameManager::VisitShop()
 {
 	int NextChoice = 0;
-	cout << "다음 층으로 넘어가시겠습니까? : \n";
-	cout << "1. 다음 층\n";
-	cout << "2. 상점\n";
+	cout << "======Next Floor or VisitShop======\n\n";
+	cout << "1. 다음 층\n\n";
+	cout << "2. 상점\n\n";
+	cout << "다음 층으로 넘어가시겠습니까? : ";
 	cin >> NextChoice;
 		
 	switch (NextChoice)
@@ -167,37 +186,45 @@ void GameManager::BossRound()
 
 	if (Round == 10)
 	{
-		cout << "======" << Round << "층 Monster!!======\n";
-		cout << "*****B.O.S.S!!!*****\n";
+		cout << "======" << Round << "층 Monster!!======\n\n";
+		cout << "*****B.O.S.S!!!*****\n\n";
 		Boss_RedDragon Boss;
 		Boss.roar();
-		cout << "Boss HP : " << Boss.getHealth() << "Boss Attack : " << Boss.getAttack() << endl;
+		cout << "Boss HP : " << Boss.getHealth() << " / Boss Attack : " << Boss.getAttack() << endl;
 
 		while (1)
 		{
 			if (Boss.getHealth() > 0)
 			{
-				cout << "======My Turn======\n";
-				cout << "선택해주세요 : \n";
-				cout << "1. 공격하기\n";
-				cout << "2. 인벤토리 열기\n";
+			MAKE_CHOICE1:
+				cout << "======My Turn======\n\n";
+				cout << "1. 공격하기\n\n";
+				cout << "2. 인벤토리 열기\n\n";
+				cout << "선택해주세요 : ";
 				cin >> TrunChoice;
 
 				switch (TrunChoice)
 				{
 				case 1:
-					cout << player->getName() << "이(가)" << Boss.getName() << "을(를) 공격했습니다!!\n";
+					cout << "======My Attack======\n\n";
+					cout << player->getName() << "이(가)" << Boss.getName() << "을(를) 공격했습니다!!\n\n";
+					cout << player->getAttack() << "만큼 공격 했습니다!!\n\n";
 					Boss.takeDamage(player->getAttack());
-					cout << player->getAttack() << "만큼 데미지를 입혔습니다!!\n";
+					cout << "========================\n\n";
+					cout << "Boss HP : " << Boss.getHealth() << " / Boss Attack : " << Boss.getAttack() << endl;
 					break;
 
 				case 2:
+				MAKE_CHOICE2:
+					cout << "======Use Item======\n\n";
 					player->openInventory();
-					cout << "어떤 아이템을 사용하시겠습니까? : \n";
-					cout << "1. Hp물약\n";
-					cout << "2. Attack물약\n";
-					cout << "3. 돌아가기\n";
-					cout << "HP : " << player->getHealth() << "Attack : " << player->getAttack() << endl;
+					cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+					cout << "공격력 : " << player->getAttack() << endl;
+					cout << "========================\n\n";
+					cout << "1. Hp물약\n\n";
+					cout << "2. Attack물약\n\n";
+					cout << "3. 돌아가기\n\n";
+					cout << "어떤 아이템을 사용하시겠습니까? : ";
 					cin >> InvenChoice;
 
 					switch (InvenChoice)
@@ -205,45 +232,55 @@ void GameManager::BossRound()
 					case 1:
 						if (player->useItem(EItemType::HealAmount))
 						{
-							cout << "HP가 증가되었습니다!\n";
-							cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "공격력 : " << player->getAttack() << endl;
+							cout << "======Hp 100 Potion Use======\n\n";
+							cout << "HP가 증가되었습니다!\n\n";
+							cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+							cout << "공격력 : " << player->getAttack() << endl;
 						}
 						else
 						{
-							cout << "HP 물약이 부족합니다.\n";
+							cout << "HP 물약이 부족합니다.\n\n";
+							goto MAKE_CHOICE2;
 						}
 						break;
 
 					case 2:
 						if (player->useItem(EItemType::HealRatio))
 						{
-							cout << "Hp가 50% 증가되었습니다!\n";
-							cout << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << "공격력 : " << player->getAttack() << endl;
+							cout << "======Hp 50%Potion Use======\n\n";
+							cout << "Hp가 50% 증가되었습니다!\n\n";
+							cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+							cout << "공격력 : " << player->getAttack() << endl;
 						}
 						else
 						{
 							cout << "Hp가 50% 물약이 부족합니다.";
+							goto MAKE_CHOICE2;
 						}
 						break;
 
 					case 3:
 						cout << "돌아갑니다";
-						break;
+						goto MAKE_CHOICE1;
 					}
 					break;
 				}
-				cout << Boss.getName() << "이(가)" << player->getName() << "을(를) 공격했습니다!!\n";
+				cout << "======Boss Trun======\n\n";
+				cout << Boss.getName() << "이(가)" << player->getName() << "을(를) 공격했습니다!!\n\n";
+				cout << Boss.getAttack() << "만큼 공격 당했습니다!!\n\n";
 				player->takeDamage(Boss.getAttack());
-				cout << Boss.getAttack() << "만큼 데미지를 입혔습니다!!\n";
+				cout << "========================\n\n";
+				cout << " " << player->getName() << "HP / MaxHP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+				cout << "공격력 : " << player->getAttack() << endl;
 			}
 			else if (Boss.getHealth() <= 0)
 			{
-				cout << Boss.getName() << "을(를) 처치했습니다!!\n";
-				GameOver();
+				cout << Boss.getName() << "을(를) 처치했습니다!!\n\n";
+				GameWin();
 			}
 			else if (player->getHealth() <= 0)
 			{
-				cout << Boss.getName() << "에게 당했습니다...\n";
+				cout << Boss.getName() << "에게 당했습니다...\n\n";
 				GameOver();
 			}
 		}
@@ -253,6 +290,12 @@ void GameManager::BossRound()
 
 void GameManager::GameOver()
 {
-	cout << "게임에서 패배하였습니다\n";
+	cout << "게임에서 패배하였습니다\n\n";
+	return exit(0);
+}
+
+void GameManager::GameWin()
+{
+	cout << "게임을 승리하셨습니다\n\n";
 	return exit(0);
 }

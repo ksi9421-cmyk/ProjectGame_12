@@ -21,6 +21,7 @@ public:
 	void VisitShop();
 	void BossRound();
 	void GameOver();
+	void GameWin();
 	int getRound() { return Round; }
 
 	static GameManager& getinstance();

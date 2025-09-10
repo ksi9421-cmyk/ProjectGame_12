@@ -9,9 +9,9 @@ using namespace std;
 class GameManager
 {
 private:
-	static int Round;
+	int Round;
 
-	weak_ptr<Player> player;
+	shared_ptr<Player> player;
 
 	GameManager();
 
@@ -21,5 +21,7 @@ public:
 	void VisitShop();
 	void BossRound();
 	int GameOver();
-	static int getRound() { return Round; }
+	int getRound() { return Round; }
+
+	static GameManager& getinstance();
 };

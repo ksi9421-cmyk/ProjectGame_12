@@ -3,7 +3,7 @@
 
 Goblin::Goblin()
 {
-	int level = GameManager::getRound();
+	int level = GameManager::getinstance().getRound();
 	random_device rd;
 	mt19937 gen(rd());
 

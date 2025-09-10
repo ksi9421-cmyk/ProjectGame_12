@@ -110,7 +110,7 @@ void Bag::TakeRandomItem()
 	else if (randomNumber >= 70)
 	{
 		addItem(EItemType::HealAmount, 1);  
-		cout << "12%확률로[HP 50 증가 물약 ] 을 획득하였습니다\n";
+		cout << "12%확률로[HP 100 증가 물약 ] 을 획득하였습니다\n";
 	}
 
 	else cout << "아무것도 얻지 못했습니다 ㅠㅠ\n";

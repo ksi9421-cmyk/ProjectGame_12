@@ -52,7 +52,7 @@ void Shop::buyItem(Gold& playerGold)
         if (playerGold.spend(selectItem.price))
         {
             cout << selectItem.name << "을 구매하셨습니다." << endl;
-            playerGold.add();
+            
         }
         else
         {

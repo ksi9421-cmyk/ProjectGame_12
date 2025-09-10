@@ -54,10 +54,6 @@ void Shop::buyItem()
             cout << selectItem.name << "을 구매하셨습니다." << endl;
             Gold::getinstance().add();
         }
-        else
-        {
-            cout << "골드가 부족합니다. 다시 선택하세요." << endl;
-        }
 
         // 반복문이 돌아가면 맨 위 골드가 갱신되면서 상점 화면 다시 출력
     }

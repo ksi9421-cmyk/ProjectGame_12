@@ -20,7 +20,7 @@ public:
 	void MonsterRound();
 	void VisitShop();
 	void BossRound();
-	int GameOver();
+	void GameOver();
 	int getRound() { return Round; }
 
 	static GameManager& getinstance();

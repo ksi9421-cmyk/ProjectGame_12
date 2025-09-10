@@ -5,6 +5,7 @@
 #include "Player.h"
 #include "Shop.h"
 #include "Gold.h"
+#include <cstdlib>
 
 using namespace std;
 
@@ -49,10 +50,11 @@ void GameManager::MonsterRound()
 		monster->roar();
 		cout << "Monster HP : " << monster->getHealth() << "Monster Attack : " << monster->getAttack() << endl;
 
-		while (1)
+		while (player->getHealth() >0 && monster->getHealth() >0)
 		{
 			if (monster->getHealth() > 0)
 			{
+				MAKE_CHOICE1:
 				cout << "======My Turn======\n";
 				cout << "선택해주세요 : \n";
 				cout << "1. 공격하기\n";
@@ -62,12 +64,14 @@ void GameManager::MonsterRound()
 				switch (TrunChoice)
 				{
 				case 1:
-					cout << player->getName() << "이(가)" << monster->getName() << "을(를) 공격했다!!\n";
+					cout << player->getName() << "이(가)" << monster->getName() << "을(를) 공격했습니다!!\n";
 					 monster->takeDamage(player->getAttack());
-					cout << player->getAttack() << "만큼 데미지를 입혔다!!\n";
+					cout << player->getAttack() << "만큼 데미지를 입혔습니다!!\n";
 					break;
 
 				case 2:
+				MAKE_CHOICE2:
+
 					player->openInventory();
 					cout << "어떤 아이템을 사용하시겠습니까? : \n";
 					cout << "1. Hp물약\n";
@@ -88,6 +92,7 @@ void GameManager::MonsterRound()
 						{
 							cout << "HP 물약이 부족합니다.\n";
 						}
+						goto MAKE_CHOICE2;
 						break;
 
 					case 2:
@@ -100,23 +105,36 @@ void GameManager::MonsterRound()
 						{
 					    	cout << "Hp가 50% 물약이 부족합니다.";
 						}
+						goto MAKE_CHOICE2;
 						break;
 
 					case 3:
 						cout << "돌아갑니다";
+						goto MAKE_CHOICE1;
 						break;
 					}
 					break;
 				}
-				cout << monster->getName() << "이(가)" << player->getName() << "을(를) 공격했다!!\n";
-				player->takeDamage(monster->getAttack());
-				cout << monster->getAttack() << "만큼 데미지를 입혔다!!\n";
-			}
-			else if (player->getHealth() <= 0)
-			{
-				cout << monster->getName() << "에게 당했다...\n";
-				GameOver();
-			}
+				if (monster->getHealth() > 0)
+				{
+					cout << monster->getName() << "이(가)" << player->getName() << "을(를) 공격했습니다!!\n";
+					player->takeDamage(monster->getAttack());
+					cout << monster->getAttack() << "만큼 데미지를 입혔습니다!!\n";
+				}
+				else
+				{
+					break;
+				}
+			}		
+		}
+		if (monster->getHealth() <= 0)
+		{
+			player->levelUp();
+		}
+		else if (player->getHealth() <= 0)
+		{
+			cout << monster->getName() << "에게 당했습니다...\n";
+			GameOver();
 		}
 		Round++;
 }
@@ -168,9 +186,9 @@ void GameManager::BossRound()
 				switch (TrunChoice)
 				{
 				case 1:
-					cout << player->getName() << "이(가)" << Boss.getName() << "을(를) 공격했다!!\n";
+					cout << player->getName() << "이(가)" << Boss.getName() << "을(를) 공격했습니다!!\n";
 					Boss.takeDamage(player->getAttack());
-					cout << player->getAttack() << "만큼 데미지를 입혔다!!\n";
+					cout << player->getAttack() << "만큼 데미지를 입혔습니다!!\n";
 					break;
 
 				case 2:
@@ -214,18 +232,18 @@ void GameManager::BossRound()
 					}
 					break;
 				}
-				cout << Boss.getName() << "이(가)" << player->getName() << "을(를) 공격했다!!\n";
+				cout << Boss.getName() << "이(가)" << player->getName() << "을(를) 공격했습니다!!\n";
 				player->takeDamage(Boss.getAttack());
-				cout << Boss.getAttack() << "만큼 데미지를 입혔다!!\n";
+				cout << Boss.getAttack() << "만큼 데미지를 입혔습니다!!\n";
 			}
 			else if (Boss.getHealth() <= 0)
 			{
-				cout << Boss.getName() << "을(를) 처치했다!!\n";
+				cout << Boss.getName() << "을(를) 처치했습니다!!\n";
 				GameOver();
 			}
 			else if (player->getHealth() <= 0)
 			{
-				cout << Boss.getName() << "에게 당했다...\n";
+				cout << Boss.getName() << "에게 당했습니다...\n";
 				GameOver();
 			}
 		}
@@ -233,8 +251,8 @@ void GameManager::BossRound()
 }
 
 
-int GameManager::GameOver()
+void GameManager::GameOver()
 {
 	cout << "게임에서 패배하였습니다\n";
-	exit(0);
+	return exit(0);
 }

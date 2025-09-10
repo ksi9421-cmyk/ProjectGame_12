@@ -147,7 +147,7 @@ void GameManager::MonsterRound()
 		if (monster->getHealth() <= 0)
 		{
 			player->levelUp();
-			//몬스터 item, 플레이어 exp
+			//몬스터 item, 플레이어 exp 획득
 		}
 		else if (player->getHealth() <= 0)
 		{

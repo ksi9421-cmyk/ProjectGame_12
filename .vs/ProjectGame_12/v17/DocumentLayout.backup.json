@@ -1,95 +1,70 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Project\\ProjectGame_12\\",
+  "WorkspaceRootPath": "E:\\Project_12\\ProjectGame_12\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Bag.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Bag.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Bag.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Bag.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\PotionHealAmount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\PotionHealAmount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Armor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Armor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\PotionHealRatio.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\PotionHealRatio.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Lizardman.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Lizardman.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Gold.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Gold.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Boss_RedDragon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Boss_RedDragon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\GameManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\GameManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Gold.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Gold.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|C:\\Project\\ProjectGame_12\\ProjectGame_12\\GameManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\GameManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\GameManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Project\\ProjectGame_12\\ProjectGame_12\\Potion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectGame_12\\Potion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Gold.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Gold.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\xutility||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\random||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Bag.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Bag.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Bag.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Bag.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\GameManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\GameManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Gold.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Gold.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Lizardman.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\Lizardman.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\PotionHealAmount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{212CB6AC-778B-4391-AFE2-E7779F52B5B1}|ProjectGame_12\\ProjectGame_12.vcxproj|solutionrelative:ProjectGame_12\\PotionHealAmount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -99,356 +74,203 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 22,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{68487888-204a-11d3-87eb-00c04f7971a5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{45a9fcd5-392d-4c5b-89e1-62d4aa07496f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{be4d7042-ba3f-11d2-840e-00c04f9902c1}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{ecb7191a-597b-41f5-9843-03a4cf275dde}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{588470cc-84f8-4a57-9ac4-86bca0625ff4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{a0c5197d-0ac7-4b63-97cd-8872a789d233}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Shop.h",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Shop.h",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Shop.h",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Shop.h",
+              "RelativeToolTip": "ProjectGame_12\\Shop.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-10T17:17:56.578Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "xutility",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\xutility",
-              "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\xutility",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\xutility",
-              "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\xutility",
-              "ViewState": "AgIAALUBAAAAAAAAAAAQwNsBAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-10T07:53:40.031Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "random",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\random",
-              "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\random",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\random",
-              "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\random",
-              "ViewState": "AgIAAK0FAAAAAAAAAAAowMIFAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-10T08:45:13.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PotionHealRatio.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\PotionHealRatio.cpp",
-              "RelativeDocumentMoniker": "ProjectGame_12\\PotionHealRatio.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\PotionHealRatio.cpp",
-              "RelativeToolTip": "ProjectGame_12\\PotionHealRatio.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Gold.cpp",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Gold.cpp",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Gold.cpp",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Gold.cpp",
+              "RelativeToolTip": "ProjectGame_12\\Gold.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-10T07:44:45.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PotionHealAmount.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\PotionHealAmount.cpp",
-              "RelativeDocumentMoniker": "ProjectGame_12\\PotionHealAmount.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\PotionHealAmount.cpp",
-              "RelativeToolTip": "ProjectGame_12\\PotionHealAmount.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-10T07:44:41.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Shop.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Shop.cpp",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Shop.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Shop.cpp",
-              "RelativeToolTip": "ProjectGame_12\\Shop.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-10T02:39:15.936Z",
+              "WhenOpened": "2025-09-10T19:05:44.811Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Gold.h",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Gold.h",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Gold.h",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Gold.h",
-              "RelativeToolTip": "ProjectGame_12\\Gold.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-09T14:14:23.182Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Gold.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Gold.cpp",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Gold.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Gold.cpp",
-              "RelativeToolTip": "ProjectGame_12\\Gold.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Shop.cpp",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Shop.cpp",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Shop.cpp",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Shop.cpp",
+              "RelativeToolTip": "ProjectGame_12\\Shop.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-09T14:14:17.896Z"
+              "WhenOpened": "2025-09-09T14:37:24.072Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "memory",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
-              "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
-              "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
-              "ViewState": "AgIAABgOAAAAAAAAAAAQwCwOAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-09T13:32:23.274Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "GameManager.h",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\GameManager.h",
-              "RelativeDocumentMoniker": "ProjectGame_12\\GameManager.h",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\GameManager.h",
-              "RelativeToolTip": "ProjectGame_12\\GameManager.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Item.h",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Item.h",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Item.h",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Item.h",
+              "RelativeToolTip": "ProjectGame_12\\Item.h",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAUwHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-09T12:40:22.124Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "GameManager.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\GameManager.cpp",
-              "RelativeDocumentMoniker": "ProjectGame_12\\GameManager.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\GameManager.cpp",
-              "RelativeToolTip": "ProjectGame_12\\GameManager.cpp",
-              "ViewState": "AgIAABwAAAAAAAAAAAAowGcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-09T11:50:43.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Monster.h",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Monster.h",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Monster.h",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Monster.h",
-              "RelativeToolTip": "ProjectGame_12\\Monster.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-09T09:59:17.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Lizardman.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Lizardman.cpp",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Lizardman.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Lizardman.cpp",
-              "RelativeToolTip": "ProjectGame_12\\Lizardman.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-09T08:05:49.726Z"
+              "WhenOpened": "2025-09-10T02:30:43.064Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Player.cpp",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Player.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Player.cpp",
-              "RelativeToolTip": "ProjectGame_12\\Player.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADUAAAASAAAAAAAAAA==",
+              "Title": "Item.cpp",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Item.cpp",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Item.cpp",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Item.cpp",
+              "RelativeToolTip": "ProjectGame_12\\Item.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-09T07:32:04.203Z"
+              "WhenOpened": "2025-09-10T02:30:54.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameManager.cpp",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\GameManager.cpp",
+              "RelativeDocumentMoniker": "ProjectGame_12\\GameManager.cpp",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\GameManager.cpp",
+              "RelativeToolTip": "ProjectGame_12\\GameManager.cpp",
+              "ViewState": "AgIAACsAAAAAAAAAAAAUwNgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-09T07:30:41.084Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Player.h",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Player.h",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Player.h",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Player.h",
-              "RelativeToolTip": "ProjectGame_12\\Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-09T07:25:01.125Z"
+              "Title": "Bag.cpp",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Bag.cpp",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Bag.cpp",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Bag.cpp",
+              "RelativeToolTip": "ProjectGame_12\\Bag.cpp",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAUwF8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-09T13:08:01.712Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Main.cpp",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Main.cpp",
               "RelativeDocumentMoniker": "ProjectGame_12\\Main.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Main.cpp",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Main.cpp",
               "RelativeToolTip": "ProjectGame_12\\Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-09T07:24:48.746Z"
+              "WhenOpened": "2025-09-10T04:36:29.229Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Boss_RedDragon.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Boss_RedDragon.cpp",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Boss_RedDragon.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Boss_RedDragon.cpp",
-              "RelativeToolTip": "ProjectGame_12\\Boss_RedDragon.cpp",
-              "ViewState": "AgIAABQAAAAAAAAAAAAowCkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-09T07:24:09.451Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Bag.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Bag.cpp",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Bag.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Bag.cpp",
-              "RelativeToolTip": "ProjectGame_12\\Bag.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAEEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-06T09:13:39.696Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Bag.h",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Bag.h",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Bag.h",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Bag.h",
-              "RelativeToolTip": "ProjectGame_12\\Bag.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Gold.h",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Gold.h",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Gold.h",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Gold.h",
+              "RelativeToolTip": "ProjectGame_12\\Gold.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-06T07:24:10.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Armor.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Armor.cpp",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Armor.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Armor.cpp",
-              "RelativeToolTip": "ProjectGame_12\\Armor.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-05T08:19:08.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Potion.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Potion.cpp",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Potion.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Potion.cpp",
-              "RelativeToolTip": "ProjectGame_12\\Potion.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-05T06:54:53.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Weapon.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Weapon.cpp",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Weapon.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Weapon.cpp",
-              "RelativeToolTip": "ProjectGame_12\\Weapon.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-05T06:40:26.637Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Item.cpp",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Item.cpp",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Item.cpp",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Item.cpp",
-              "RelativeToolTip": "ProjectGame_12\\Item.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-05T03:12:04.003Z"
+              "WhenOpened": "2025-09-09T14:22:29.477Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Item.h",
-              "DocumentMoniker": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Item.h",
-              "RelativeDocumentMoniker": "ProjectGame_12\\Item.h",
-              "ToolTip": "C:\\Project\\ProjectGame_12\\ProjectGame_12\\Item.h",
-              "RelativeToolTip": "ProjectGame_12\\Item.h",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAowGMAAAAaAAAAAAAAAA==",
+              "Title": "Bag.h",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Bag.h",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Bag.h",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Bag.h",
+              "RelativeToolTip": "ProjectGame_12\\Bag.h",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-05T02:35:42.428Z"
+              "WhenOpened": "2025-09-09T11:41:21.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Player.h",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Player.h",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Player.h",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Player.h",
+              "RelativeToolTip": "ProjectGame_12\\Player.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwCkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-09T06:38:45.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Weapon.cpp",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Weapon.cpp",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Weapon.cpp",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Weapon.cpp",
+              "RelativeToolTip": "ProjectGame_12\\Weapon.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-10T13:28:38.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Player.cpp",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Player.cpp",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Player.cpp",
+              "RelativeToolTip": "ProjectGame_12\\Player.cpp",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAUwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-09T14:11:33.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameManager.h",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\GameManager.h",
+              "RelativeDocumentMoniker": "ProjectGame_12\\GameManager.h",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\GameManager.h",
+              "RelativeToolTip": "ProjectGame_12\\GameManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-09T12:04:41.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Lizardman.h",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Lizardman.h",
+              "RelativeDocumentMoniker": "ProjectGame_12\\Lizardman.h",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\Lizardman.h",
+              "RelativeToolTip": "ProjectGame_12\\Lizardman.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-10T05:18:52.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PotionHealAmount.cpp",
+              "DocumentMoniker": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\PotionHealAmount.cpp",
+              "RelativeDocumentMoniker": "ProjectGame_12\\PotionHealAmount.cpp",
+              "ToolTip": "E:\\Project_12\\ProjectGame_12\\ProjectGame_12\\PotionHealAmount.cpp",
+              "RelativeToolTip": "ProjectGame_12\\PotionHealAmount.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-10T16:31:05.703Z"
             }
           ]
         }

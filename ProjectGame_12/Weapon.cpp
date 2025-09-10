@@ -15,7 +15,7 @@ Weapon::~Weapon() = default;
 void Weapon::use(Player* target) {
 	int bonus = static_cast<int>(target->getAttack() * 0.2);
 	target->powerUp(bonus);
+	subcount(1);
 
-
-	std::cout << "steal sword." << getName() << " damage 20% up.(+" << bonus << ")\n";
+	std::cout << " damage 20% up.(+" << bonus << ")\n";
 }

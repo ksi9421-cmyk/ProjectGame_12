@@ -5,5 +5,6 @@ void PotionHealRatio::use(Player* target)
 {
 	int healValue = static_cast<int>(target->getHealth() * healRatio);
 	target->heal(healValue);
+	subcount(1);
 	std::cout << "[elixirr]" << getName() << "at used max hp " << (healRatio * 50) << "% heal.(+" << healValue << ")\n";
 }

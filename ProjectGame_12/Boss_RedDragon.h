@@ -15,6 +15,6 @@ public:
 	int getHealth();
 	int getAttack();
 	void roar();
-	void takeDamage(int damage);
+	void takeDamage(int damage) override;
 };
 

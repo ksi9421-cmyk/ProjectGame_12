@@ -57,7 +57,7 @@ void GameManager::MonsterRound()
 				{
 				case 1:
 					cout << player.lock()->getName() << "이(가)" << monster->getName() << "을(를) 공격했다!!\n";
-					//monster->getHealth() -= Player::getinstance().getAttack();
+					 monster->takeDamage(player.lock()->getAttack());
 					cout << player.lock()->getAttack() << "만큼 데미지를 입혔다!!\n";
 					break;
 

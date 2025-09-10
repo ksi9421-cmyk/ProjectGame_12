@@ -214,7 +214,7 @@ void GameManager::VisitShop()
 			break;
 
 		case 2:
-			shop.buyItem();
+			
 			shop.buyItem(player.get()); 
 			break;
 

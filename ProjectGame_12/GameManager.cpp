@@ -111,6 +111,7 @@ void GameManager::MonsterRound()
 						cout << "======HP 회복 물약 사용======\n\n";
 						cout << "HP가 증가되었습니다!\n\n";
 						cout << " " << player->getName() << "HP / 최대HP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+						break;
 					}
 					else
 					{
@@ -126,6 +127,7 @@ void GameManager::MonsterRound()
 						cout << "======Hp 50% 회복 물약======\n\n";
 						cout << "Hp가 50% 증가되었습니다!\n\n";
 						cout << " " << player->getName() << "HP / 최대HP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+						break;
 					}
 					else
 					{
@@ -141,6 +143,7 @@ void GameManager::MonsterRound()
 						cout << "======공격력 증가 물약 사용======\n\n";
 						cout << "공격력이 20% 증가되었습니다!\n\n";
 						cout << " " << player->getName() << "공격력 : " << player->getAttack() << endl;
+						break;
 					}
 					else
 					{
@@ -156,6 +159,7 @@ void GameManager::MonsterRound()
 						cout << "======최대HP 증가 물약 사용======\n\n";
 						cout << "최대HP이 30% 증가되었습니다!\n\n";
 						cout << " " << player->getName() << "최대 HP : " << player->getmaxHP() << endl;
+						break;
 					}
 					else
 					{
@@ -323,6 +327,7 @@ void GameManager::BossRound()
 							cout << "======HP 회복 물약 사용======\n\n";
 							cout << "HP가 증가되었습니다!\n\n";
 							cout << " " << player->getName() << "HP / 최대HP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+							break;
 						}
 						else
 						{
@@ -338,6 +343,7 @@ void GameManager::BossRound()
 							cout << "======Hp 50% 회복 물약======\n\n";
 							cout << "Hp가 50% 증가되었습니다!\n\n";
 							cout << " " << player->getName() << "HP / 최대HP : " << player->getHealth() << " / " << player->getmaxHP() << endl;
+							break;
 						}
 						else
 						{
@@ -353,6 +359,7 @@ void GameManager::BossRound()
 							cout << "======공격력 증가 물약 사용======\n\n";
 							cout << "공격력이 20% 증가되었습니다!\n\n";
 							cout << " " << player->getName() << "공격력 : " << player->getAttack() << endl;
+							break;
 						}
 						else
 						{
@@ -368,6 +375,7 @@ void GameManager::BossRound()
 							cout << "======최대HP 증가 물약 사용======\n\n";
 							cout << "최대HP이 30% 증가되었습니다!\n\n";
 							cout << " " << player->getName() << "최대 HP : " << player->getmaxHP() << endl;
+							break;
 						}
 						else
 						{

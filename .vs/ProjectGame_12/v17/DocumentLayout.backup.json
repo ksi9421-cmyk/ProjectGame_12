@@ -51,8 +51,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-10T06:10:33.453Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "ProjectGame_12\\Item.h",
               "ViewState": "AgIAAFoAAAAAAAAAAAAAAGgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-10T09:01:57.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T09:01:57.091Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "ProjectGame_12\\Player.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAwBgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-10T08:30:39.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T08:30:39.659Z"
             },
             {
               "$type": "Document",
@@ -92,7 +89,7 @@
               "RelativeDocumentMoniker": "ProjectGame_12\\GameManager.cpp",
               "ToolTip": "C:\\UnraelEngine\\ProjectGame_12\\ProjectGame_12\\GameManager.cpp",
               "RelativeToolTip": "ProjectGame_12\\GameManager.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEcAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAAAJ0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-09T03:46:32.622Z",
               "EditorCaption": ""
@@ -107,8 +104,7 @@
               "RelativeToolTip": "ProjectGame_12\\GameManager.h",
               "ViewState": "AgIAAAQAAAAAAAAAAAAUwBoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-10T05:50:47.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T05:50:47.047Z"
             },
             {
               "$type": "Document",
@@ -120,8 +116,7 @@
               "RelativeToolTip": "ProjectGame_12\\Shop.cpp",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAADYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-10T05:55:48.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T05:55:48.96Z"
             },
             {
               "$type": "Document",
